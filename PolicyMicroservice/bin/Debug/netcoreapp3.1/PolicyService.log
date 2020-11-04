@@ -151,3 +151,37 @@ INFO  05:31:57 GetChainOfProviders Accesed
 INFO  05:32:04 GetEligibleClaimAmount is accesed
 INFO  05:32:04 GetEligibleBenefit is accessed
 INFO  05:32:04 GetChainOfProviders Accesed
+INFO  08:59:39 Application started. Press Ctrl+C to shut down.
+INFO  08:59:39 Application started. Press Ctrl+C to shut down.
+INFO  08:59:40 Hosting environment: Development
+INFO  08:59:40 Hosting environment: Development
+INFO  08:59:40 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  08:59:40 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  08:59:40 GetChainOfProviders Accesed
+INFO  08:59:55 GetEligibleBenefit is accessed
+INFO  09:00:08 GetEligibleClaimAmount is accesed
+INFO  09:00:16 GetEligibleClaimAmount is accesed
+INFO  09:00:24 GetEligibleClaimAmount is accesed
+INFO  09:00:30 GetEligibleClaimAmount is accesed
+INFO  09:00:40 GetEligibleClaimAmount is accesed
+INFO  09:00:47 GetEligibleClaimAmount is accesed
+INFO  09:02:19 Application started. Press Ctrl+C to shut down.
+INFO  09:02:19 Application started. Press Ctrl+C to shut down.
+INFO  09:02:19 Hosting environment: Development
+INFO  09:02:19 Hosting environment: Development
+INFO  09:02:19 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  09:02:19 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  09:02:39 GetEligibleClaimAmount is accesed
+INFO  09:02:48 GetEligibleClaimAmount is accesed
+INFO  09:14:37 Application started. Press Ctrl+C to shut down.
+INFO  09:14:38 Application started. Press Ctrl+C to shut down.
+INFO  09:14:38 Hosting environment: Development
+INFO  09:14:38 Hosting environment: Development
+INFO  09:14:38 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  09:14:38 Content root path: C:\Users\ASUS\Desktop\ClaimsManagementSystem\PolicyMicroservice
+INFO  09:15:17 GetChainOfProviders Accesed
+INFO  09:15:21 GetChainOfProviders Accesed
+INFO  09:24:13 GetChainOfProviders Accesed
+INFO  09:25:55 GetEligibleBenefit is accessed
+INFO  09:26:08 GetEligibleBenefit is accessed
+INFO  09:26:12 GetEligibleBenefit is accessed

@@ -7,7 +7,7 @@ namespace PolicyMicroservice.Models
 {
     public class Benefits
     {
-        public int BenefitID { get; set; }
+        public int BenefitId { get; set; }
         public string BenefitName { get; set; }
     }
 }

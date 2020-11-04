@@ -27,19 +27,27 @@ namespace PolicyMicroservice.Controllers
 
 
         //https://localhost:44373/api/Policy/GetChainOfProviders/1
-        [HttpGet("GetChainOfProviders/{PolicyID}")]
-        public IActionResult GetChainOfProviders(int PolicyID)
+        [HttpGet]
+        [Route("GetChainOfProviders/{PolicyID}")]
+        public IActionResult GetChainOfProviders(int policyId)
         {
             try
             {
-                 _log4net.Info("GetChainOfProviders Accesed");
-                var providerlist = _policyRepository.GetChainOfProviders(PolicyID);
-                return new OkObjectResult(providerlist);
+                if (ModelState.IsValid)
+                {
+                    _log4net.Info("GetChainOfProviders Accesed");
+                    var providerlist = _policyRepository.GetChainOfProviders(policyId);
+
+                    return new OkObjectResult(providerlist);
+                }
+                else
+                    _log4net.Info("Model is not valid in GetChainOfProviders");
+                    return BadRequest();
 
             }
             catch(Exception e)
             {
-               _log4net.Error("Error in GetChainOfProviders"+e.Message);
+               _log4net.Error("Exception in GetChainOfProviders"+e.Message);
                 return new NoContentResult();
             }
         }
@@ -51,20 +59,29 @@ namespace PolicyMicroservice.Controllers
         /// <returns></returns>
 
       // https://localhost:44373/api/Policy/GetEligibleBenefits?PolicyId=1&MemberID=1 
-      [HttpGet("GetEligibleBenefits")]
+      [HttpGet]
+      [Route("GetEligibleBenefits")]
     
-        public IActionResult GetEligibleBenefit([FromQuery]int PolicyID,[FromQuery] int MemberID)
+        public IActionResult GetEligibleBenefit([FromQuery]int policyId,[FromQuery] int memberId)
         {
             try
             {
-                _log4net.Info("GetEligibleBenefit is accessed");
-                var benefitslist = _policyRepository.GetEligibleBenefits(PolicyID, MemberID);
-                return new OkObjectResult(benefitslist);
+                if (ModelState.IsValid)
+                {
+                    _log4net.Info("GetEligibleBenefit is accessed");
+                    var benefitslist = _policyRepository.GetEligibleBenefits(policyId, memberId);
+                    return new OkObjectResult(benefitslist);
+                }
+                else
+                {
+                    _log4net.Info("Model is not valid in GetEligibleBenefit");
+                    return BadRequest();
+                }
 
             }
             catch(Exception e)
             {
-                 _log4net.Error("Error in GetEligibleBenefit"+e.Message);
+                 _log4net.Error("Exception in GetEligibleBenefit"+e.Message);
                 return new NoContentResult();
             }
         }
@@ -77,19 +94,26 @@ namespace PolicyMicroservice.Controllers
         /// <param name="BenefitId"></param>
         /// <returns></returns>
 
-        [HttpGet("GetEligibleClaimAmount")]
-        public IActionResult GetEligibleClaimAmount([FromQuery]int PolicyId,[FromQuery] int MemberID,[FromQuery] int BenefitId)
+        [HttpGet]
+        [Route("GetEligibleClaimAmount")]
+        public IActionResult GetEligibleClaimAmount([FromQuery]int policyId,[FromQuery] int memberId,[FromQuery] int benefitId)
         {
             try
             {
-                _log4net.Info("GetEligibleClaimAmount is accesed");
-                var amt = _policyRepository.GetEligibleClaimAmount(PolicyId, MemberID, BenefitId);
-                return new OkObjectResult(amt);
+                if (ModelState.IsValid)
+                {
+                    _log4net.Info("GetEligibleClaimAmount is accesed");
+                    var amt = _policyRepository.GetEligibleClaimAmount(policyId, memberId, benefitId);
+                    return new OkObjectResult(amt);
+                }
+                else
+                    _log4net.Info("ModelState is not valid for GetEligibleAmount");
+                    return BadRequest();
 
             }
             catch(Exception e)
             {
-                _log4net.Error("Error in GetEligibleClaimAmount"+e.Message);
+                _log4net.Error("Exception in GetEligibleClaimAmount"+e.Message);
                 return new NoContentResult();
 
             }

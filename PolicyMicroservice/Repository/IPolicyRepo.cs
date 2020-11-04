@@ -8,8 +8,8 @@ namespace PolicyMicroservice.Repository
 {
     public interface IPolicyRepo
     {
-        public IEnumerable<ProviderPolicy> GetChainOfProviders(int PolicyNO);
-        public string GetEligibleBenefits(int PolicyID,int MemberID);
-        public double GetEligibleClaimAmount(int PolicyID, int MemberID, int BenefitID);
+        public IEnumerable<ProviderPolicy> GetChainOfProviders(int policyNo);
+        public string GetEligibleBenefits(int policyId,int memberId);
+        public double GetEligibleClaimAmount(int policyId, int memberId, int benefitId);
     }
 }

@@ -8,10 +8,10 @@ namespace PolicyMicroservice.Models
     public class MemberPolicy
     {
         
-        public int MemberID { get; set; }
-        public int PolicyID { get; set; }
-        public int PolicyNO { get; set; }
-        public int BenefitID { get; set; }
+        public int MemberId { get; set; }
+        public int PolicyId { get; set; }
+        public int PolicyNo { get; set; }
+        public int BenefitId { get; set; }
         public DateTime SubscriptionDate { get; set; }
         public int Tenure { get; set; }
         public double CapAmountBenefits { get; set; }

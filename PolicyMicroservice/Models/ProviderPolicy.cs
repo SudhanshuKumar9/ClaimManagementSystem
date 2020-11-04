@@ -7,10 +7,10 @@ namespace PolicyMicroservice.Models
 {
     public class ProviderPolicy
     {
-        public int HospitalID { get; set; }
+        public int HospitalId { get; set; }
         public string HospitalName { get; set; }
         public string HospitalAddress { get; set; }
-        public int PolicyID { get; set; }
+        public int PolicyId { get; set; }
         public string Location { get; set; }
         
     }
