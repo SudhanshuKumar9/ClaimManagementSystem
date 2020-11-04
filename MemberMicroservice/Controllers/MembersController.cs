@@ -20,10 +20,11 @@ namespace MemberMicroservice.Controllers
         }
 
         //https://localhost:44355/api/Members/viewBills/12345/101
-        [HttpGet("viewBills/{PolicyID}/{MemberID}")]
-        public ActionResult<MemberPremium> ViewBill(int PolicyID, int MemberID)
+        [HttpGet]
+        [Route("viewBills/{PolicyID}/{MemberID}")]
+        public ActionResult<MemberPremium> ViewBill(int policyID, int memberID)
         {
-            return Ok(_memberRepository.ViewBill(PolicyID, MemberID));
+            return Ok(_memberRepository.ViewBill(policyID, memberID));
         }
 
 
@@ -38,12 +39,14 @@ namespace MemberMicroservice.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<string>> getClaimStatus([FromQuery] int ClaimID, [FromQuery] int PolicyID)
+        [Route("GetClaimStatus")]
+        public async Task<ActionResult<string>> getClaimStatus([FromQuery] int claimID, [FromQuery] int policyID)
         {
-            return Ok(_memberRepository.GetClaimStatus(ClaimID, PolicyID));
+            return Ok(_memberRepository.GetClaimStatus(claimID, policyID));
         }
 
-        [HttpGet("SubmitClaim")]
+        [HttpGet]
+        [Route("SubmitClaim")]
         public async Task<ActionResult<string>> submitClaim([FromQuery] int policyID, [FromQuery] int memberID, [FromQuery] int benefitID, [FromQuery] int hospitalID, [FromQuery] double claimAmt, [FromQuery] string benefit)
         {
             return Ok(_memberRepository.SubmitClaim(policyID, memberID, benefitID, hospitalID, claimAmt, benefit));

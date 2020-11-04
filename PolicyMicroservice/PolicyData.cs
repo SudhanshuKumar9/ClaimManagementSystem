@@ -9,14 +9,14 @@ namespace PolicyMicroservice
     public class PolicyData
     {
         public static List<Policy> policyList = new List<Policy>
-        { new Policy{PolicyId=1,PolicyNo=101,Premium=50000.00,Tenure=3,BenefitId=1},
+        {
+            new Policy{PolicyId=1,PolicyNo=101,Premium=50000.00,Tenure=3,BenefitId=1},
             new Policy{PolicyId=2,PolicyNo=102,Premium=20000.00,Tenure=5,BenefitId=1},
             new Policy{PolicyId=3,PolicyNo=103,Premium=80000.00,Tenure=7,BenefitId=2}
-
-
         };
         public static List<MemberPolicy> memberpolicyList = new List<MemberPolicy>
-        { new MemberPolicy{MemberId=1,PolicyId=1,PolicyNo=101,BenefitId=1,Tenure=3,SubscriptionDate=DateTime.Parse("15-03-2020"),CapAmountBenefits=100000.00},
+        { 
+           new MemberPolicy{MemberId=1,PolicyId=1,PolicyNo=101,BenefitId=1,Tenure=3,SubscriptionDate=DateTime.Parse("15-03-2020"),CapAmountBenefits=100000.00},
            new MemberPolicy{MemberId=2,PolicyId=1,PolicyNo=101,BenefitId=1,Tenure=3,SubscriptionDate=DateTime.Parse("18-04-2019"),CapAmountBenefits=120000.00},
            new MemberPolicy{MemberId=3,PolicyId=2,PolicyNo=102,BenefitId=1,Tenure=5,SubscriptionDate=DateTime.Parse("10-05-2019"),CapAmountBenefits=80000.00}
         };
@@ -31,7 +31,6 @@ namespace PolicyMicroservice
         {
             new Benefits{BenefitId=1,BenefitName="MedicalCheckup"},
             new Benefits{BenefitId=2,BenefitName="Accidental"}
-
         };
 
     }
