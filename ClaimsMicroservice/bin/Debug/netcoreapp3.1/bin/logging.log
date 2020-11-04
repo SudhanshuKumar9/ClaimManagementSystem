@@ -73,3 +73,473 @@ INFO  11:27:30 Hosting environment: Development
 INFO  11:27:30 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
 INFO  11:27:30 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
 INFO  11:27:58 GetClaimStatus Method Called
+INFO  02:36:01 Application started. Press Ctrl+C to shut down.
+INFO  02:36:01 Application started. Press Ctrl+C to shut down.
+INFO  02:36:01 Hosting environment: Development
+INFO  02:36:01 Hosting environment: Development
+INFO  02:36:01 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:36:01 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+ERROR 02:38:33 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim (ClaimsMicroservice)
+ClaimsMicroservice.Controllers.ClaimsController.GetClaimStatus (ClaimsMicroservice)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:38:33 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim (ClaimsMicroservice)
+ClaimsMicroservice.Controllers.ClaimsController.GetClaimStatus (ClaimsMicroservice)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:39:15 Application started. Press Ctrl+C to shut down.
+INFO  02:39:15 Application started. Press Ctrl+C to shut down.
+INFO  02:39:15 Hosting environment: Development
+INFO  02:39:15 Hosting environment: Development
+INFO  02:39:15 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:39:15 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:41:37 Application started. Press Ctrl+C to shut down.
+INFO  02:41:37 Application started. Press Ctrl+C to shut down.
+INFO  02:41:37 Hosting environment: Development
+INFO  02:41:37 Hosting environment: Development
+INFO  02:41:37 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:41:37 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:43:55 GetClaimStatus Method Called
+ERROR 02:43:57 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:43:57 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:44:11 GetClaimStatus Method Called
+ERROR 02:44:11 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:44:11 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:46:38 Application started. Press Ctrl+C to shut down.
+INFO  02:46:38 Application started. Press Ctrl+C to shut down.
+INFO  02:46:38 Hosting environment: Development
+INFO  02:46:38 Hosting environment: Development
+INFO  02:46:38 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:46:38 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:46:44 GetClaimStatus Method Called
+ERROR 02:46:45 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:46:45 An unhandled exception has occurred while executing the request.
+System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt32(String value)
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 78
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:49:41 Application started. Press Ctrl+C to shut down.
+INFO  02:49:41 Application started. Press Ctrl+C to shut down.
+INFO  02:49:41 Hosting environment: Development
+INFO  02:49:41 Hosting environment: Development
+INFO  02:49:41 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:49:41 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:49:47 GetClaimStatus Method Called
+INFO  02:50:46 Application started. Press Ctrl+C to shut down.
+INFO  02:50:46 Application started. Press Ctrl+C to shut down.
+INFO  02:50:46 Hosting environment: Development
+INFO  02:50:46 Hosting environment: Development
+INFO  02:50:46 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:50:46 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:51:11 GetClaimStatus Method Called
+INFO  02:53:27 Application started. Press Ctrl+C to shut down.
+INFO  02:53:27 Application started. Press Ctrl+C to shut down.
+INFO  02:53:27 Hosting environment: Development
+INFO  02:53:27 Hosting environment: Development
+INFO  02:53:27 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:53:27 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:55:22 Application started. Press Ctrl+C to shut down.
+INFO  02:55:22 Application started. Press Ctrl+C to shut down.
+INFO  02:55:22 Hosting environment: Development
+INFO  02:55:22 Hosting environment: Development
+INFO  02:55:22 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:55:22 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:55:51 GetClaimStatus Method Called
+ERROR 02:55:56 An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 69
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:55:56 An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 69
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:57:56 Application started. Press Ctrl+C to shut down.
+INFO  02:57:56 Application started. Press Ctrl+C to shut down.
+INFO  02:57:56 Hosting environment: Development
+INFO  02:57:56 Hosting environment: Development
+INFO  02:57:56 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:57:56 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:58:09 GetClaimStatus Method Called
+ERROR 02:58:15 An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 69
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 02:58:15 An unhandled exception has occurred while executing the request.
+System.AggregateException: One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ClaimsMicroservice.Repository.ClaimRepository.submitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Repository\ClaimRepository.cs:line 69
+   at ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim(Int32 policyID, Int32 memberID, Int32 benefitID, Int32 hospitalID, Double claimAmt, String benefit) in C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\Controllers\ClaimsController.cs:line 36
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  02:58:53 Application started. Press Ctrl+C to shut down.
+INFO  02:58:53 Application started. Press Ctrl+C to shut down.
+INFO  02:58:53 Hosting environment: Development
+INFO  02:58:53 Hosting environment: Development
+INFO  02:58:53 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:58:53 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:58:58 GetClaimStatus Method Called
+INFO  02:59:55 Application started. Press Ctrl+C to shut down.
+INFO  02:59:55 Application started. Press Ctrl+C to shut down.
+INFO  02:59:55 Hosting environment: Development
+INFO  02:59:55 Hosting environment: Development
+INFO  02:59:55 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  02:59:55 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:00:06 GetClaimStatus Method Called
+INFO  03:00:26 GetClaimStatus Method Called
+INFO  03:00:30 GetClaimStatus Method Called
+INFO  03:00:39 GetClaimStatus Method Called
+INFO  03:00:43 GetClaimStatus Method Called
+INFO  03:00:45 GetClaimStatus Method Called
+INFO  03:01:43 Application started. Press Ctrl+C to shut down.
+INFO  03:01:43 Application started. Press Ctrl+C to shut down.
+INFO  03:01:43 Hosting environment: Development
+INFO  03:01:43 Hosting environment: Development
+INFO  03:01:43 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:01:43 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:01:51 GetClaimStatus Method Called
+INFO  03:07:01 Application started. Press Ctrl+C to shut down.
+INFO  03:07:01 Application started. Press Ctrl+C to shut down.
+INFO  03:07:01 Hosting environment: Development
+INFO  03:07:01 Hosting environment: Development
+INFO  03:07:01 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:07:01 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:07:12 GetClaimStatus Method Called
+INFO  03:07:48 Application started. Press Ctrl+C to shut down.
+INFO  03:07:48 Application started. Press Ctrl+C to shut down.
+INFO  03:07:48 Hosting environment: Development
+INFO  03:07:48 Hosting environment: Development
+INFO  03:07:48 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:07:48 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:07:55 GetClaimStatus Method Called
+INFO  03:09:58 GetClaimStatus Method Called
+INFO  03:10:29 Application started. Press Ctrl+C to shut down.
+INFO  03:10:29 Application started. Press Ctrl+C to shut down.
+INFO  03:10:29 Hosting environment: Development
+INFO  03:10:29 Hosting environment: Development
+INFO  03:10:30 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:10:30 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  03:10:53 GetClaimStatus Method Called
+INFO  05:05:13 Application started. Press Ctrl+C to shut down.
+INFO  05:05:13 Application started. Press Ctrl+C to shut down.
+INFO  05:05:13 Hosting environment: Development
+INFO  05:05:13 Hosting environment: Development
+INFO  05:05:13 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:05:13 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:05:49 GetClaimStatus Method Called
+INFO  05:08:42 Application started. Press Ctrl+C to shut down.
+INFO  05:08:42 Application started. Press Ctrl+C to shut down.
+INFO  05:08:42 Hosting environment: Development
+INFO  05:08:42 Hosting environment: Development
+INFO  05:08:42 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:08:42 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:09:03 GetClaimStatus Method Called
+ERROR 05:11:29 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 05:11:29 An unhandled exception has occurred while executing the request.
+System.Text.Json.JsonException: A possible object cycle was detected which is not supported. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.JsonSerializer.Write(Utf8JsonWriter writer, Int32 originalWriterDepth, Int32 flushThreshold, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore(Stream utf8Json, Object value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  05:12:02 GetClaimStatus Method Called
+INFO  05:15:32 Application started. Press Ctrl+C to shut down.
+INFO  05:15:32 Application started. Press Ctrl+C to shut down.
+INFO  05:15:32 Hosting environment: Development
+INFO  05:15:32 Hosting environment: Development
+INFO  05:15:32 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:15:32 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:15:40 GetClaimStatus Method Called
+INFO  05:27:16 Application started. Press Ctrl+C to shut down.
+INFO  05:27:16 Application started. Press Ctrl+C to shut down.
+INFO  05:27:16 Hosting environment: Development
+INFO  05:27:16 Hosting environment: Development
+INFO  05:27:16 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:27:16 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:27:23 GetClaimStatus Method Called
+INFO  05:30:58 Application started. Press Ctrl+C to shut down.
+INFO  05:30:58 Application started. Press Ctrl+C to shut down.
+INFO  05:30:58 Hosting environment: Development
+INFO  05:30:58 Hosting environment: Development
+INFO  05:30:58 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:30:58 Content root path: C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice
+INFO  05:31:32 GetClaimStatus Method Called
+INFO  05:31:55 GetClaimStatus Method Called
+INFO  05:31:57 GetClaimStatus Method Called
+INFO  05:32:04 GetClaimStatus Method Called

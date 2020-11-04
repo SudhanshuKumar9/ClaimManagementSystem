@@ -29,8 +29,8 @@ namespace PolicyMicroservice.Repository
         };
         private List<Benefits> benefitlist = new List<Benefits>
         {
-            new Benefits{BenefitID=1,BenefitName="Medical Checkup"},
-            new Benefits{BenefitID=2,BenefitName="Accidental benefit"}
+            new Benefits{BenefitID=1,BenefitName="MedicalCheckup"},
+            new Benefits{BenefitID=2,BenefitName="Accidental"}
 
         };
 
@@ -38,19 +38,22 @@ namespace PolicyMicroservice.Repository
 
         public IEnumerable<ProviderPolicy> GetChainOfProviders(int PolicyID)
         {
-            // return bookingDbContext.Bookings.Where(b => b.UserId == userid).ToList<Booking>();
             return providerpolicyList.Where(p => p.PolicyID == PolicyID).ToList();
+            // return bookingDbContext.Bookings.Where(b => b.UserId == userid).ToList<Booking>();
+            //return (providerpolicyList.Where(p => p.PolicyID == PolicyID)).HospitalID;
+            //int filterHospital = (from p in providerpolicyList
+            //                      where (p.PolicyID == PolicyID)
+            //                      select p.HospitalID).FirstOrDefault();
+            //return filterHospital;
 
         }
 
-        public List<String> GetEligibleBenefits(int PolicyID, int MemberID)
+        public string GetEligibleBenefits(int PolicyID, int MemberID)
         {
-            List<String> _benefitlist = new List<string>();
             var benefitid = memberpolicyList.Where(p => p.PolicyID == PolicyID && p.MemberID == MemberID).FirstOrDefault();
             int id = benefitid.BenefitID;
             string benefitname = benefitlist.FirstOrDefault(b => b.BenefitID == id).BenefitName;
-            _benefitlist.Add(benefitname);
-            return _benefitlist.ToList();
+            return benefitname;
 
         }
 

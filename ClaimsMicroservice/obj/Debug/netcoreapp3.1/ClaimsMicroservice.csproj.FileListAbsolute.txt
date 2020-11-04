@@ -32,5 +32,6 @@ C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\bin\Debug\netcoreapp3.1
 C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csproj.CopyComplete
+C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csproj.CoreCompileInputs.cache
 C:\Users\Abhishek Tiwari\source\repos\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.MvcApplicationPartsAssemblyInfo.cache

@@ -9,7 +9,7 @@ namespace PolicyMicroservice.Repository
     public interface IPolicyRepo
     {
         public IEnumerable<ProviderPolicy> GetChainOfProviders(int PolicyNO);
-       public List<String> GetEligibleBenefits(int PolicyID,int MemberID);
+        public string GetEligibleBenefits(int PolicyID,int MemberID);
         public double GetEligibleClaimAmount(int PolicyID, int MemberID, int BenefitID);
     }
 }
