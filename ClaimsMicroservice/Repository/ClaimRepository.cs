@@ -71,26 +71,16 @@ namespace ClaimsMicroservice.Repository
                 HttpResponseMessage response1 = new HttpResponseMessage();
                 response1 = client.GetAsync("Policy/GetEligibleClaimAmount?PolicyID=" + policyID + "&MemberID=" + memberID + "&BenefitID=" + benefitID).Result;
                 double claimAmount = Convert.ToDouble(response1.Content.ReadAsStringAsync().Result);
-
                 HttpResponseMessage response2 = new HttpResponseMessage();
                 response2 = client.GetAsync("Policy/GetEligibleBenefits?PolicyID=" + policyID + "&MemberID=" + memberID).Result;
                 string Benefit = response2.Content.ReadAsStringAsync().Result;
-
                 HttpResponseMessage response3 = new HttpResponseMessage();
                 response3 = client.GetAsync("Policy/GetChainOfProviders/" + policyID).Result;
-
-                //var data = response3.Content.ReadAsAsync<IEnumerable<ProviderPolicy>>().Result;
-
-                //int Hospital = Convert.ToInt32(response3.Content.ReadAsStringAsync().Result);
                 List<ProviderPolicy> providers = new List<ProviderPolicy>();
                 List<int> HospitalID = new List<int>();
                 var contentType = new MediaTypeWithQualityHeaderValue("application/json");
-                //using (var response = client.GetAsync("Policy/GetChainOfProviders/" + policyID))
-                //{
-                    string apiResponse = await response3.Content.ReadAsStringAsync();
-
-                    var data = JsonConvert.DeserializeObject<List<ProviderPolicy>>(apiResponse);
-                //}
+                string apiResponse = await response3.Content.ReadAsStringAsync();
+                var data = JsonConvert.DeserializeObject<List<ProviderPolicy>>(apiResponse);
 
                 Boolean flag = false;
                 foreach (var x in data)

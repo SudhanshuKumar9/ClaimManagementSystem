@@ -2686,11 +2686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\source\\repos\\ClaimsMicroservice\\ClaimsMicroservice.csproj",
+      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\ClaimsMicroservice\\ClaimsMicroservice.csproj",
       "projectName": "ClaimsMicroservice",
-      "projectPath": "C:\\Users\\Abhishek Tiwari\\source\\repos\\ClaimsMicroservice\\ClaimsMicroservice.csproj",
+      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\ClaimsMicroservice\\ClaimsMicroservice.csproj",
       "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abhishek Tiwari\\source\\repos\\ClaimsMicroservice\\obj\\",
+      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\ClaimsMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

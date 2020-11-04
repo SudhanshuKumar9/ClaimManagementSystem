@@ -543,3 +543,56 @@ INFO  05:31:32 GetClaimStatus Method Called
 INFO  05:31:55 GetClaimStatus Method Called
 INFO  05:31:57 GetClaimStatus Method Called
 INFO  05:32:04 GetClaimStatus Method Called
+INFO  11:39:55 Application started. Press Ctrl+C to shut down.
+INFO  11:39:55 Application started. Press Ctrl+C to shut down.
+INFO  11:39:55 Hosting environment: Development
+INFO  11:39:55 Hosting environment: Development
+INFO  11:39:55 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:39:55 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:40:11 GetClaimStatus Method Called
+INFO  11:54:40 Application started. Press Ctrl+C to shut down.
+INFO  11:54:40 Application started. Press Ctrl+C to shut down.
+INFO  11:54:40 Hosting environment: Development
+INFO  11:54:40 Hosting environment: Development
+INFO  11:54:40 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:54:40 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+ERROR 11:55:06 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ClaimsMicroservice.Controllers.ClaimsController.GetClaimStatus (ClaimsMicroservice)
+ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim (ClaimsMicroservice)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 11:55:06 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+ClaimsMicroservice.Controllers.ClaimsController.GetClaimStatus (ClaimsMicroservice)
+ClaimsMicroservice.Controllers.ClaimsController.SubmitClaim (ClaimsMicroservice)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:56:34 Application started. Press Ctrl+C to shut down.
+INFO  11:56:34 Application started. Press Ctrl+C to shut down.
+INFO  11:56:34 Hosting environment: Development
+INFO  11:56:34 Hosting environment: Development
+INFO  11:56:34 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:56:34 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:56:52 SubmitClaim Method Called
+INFO  12:18:29 Application started. Press Ctrl+C to shut down.
+INFO  12:18:29 Application started. Press Ctrl+C to shut down.
+INFO  12:18:29 Hosting environment: Development
+INFO  12:18:29 Hosting environment: Development
+INFO  12:18:29 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:18:29 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:24:56 SubmitClaim Method Called

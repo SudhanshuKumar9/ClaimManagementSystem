@@ -94,7 +94,7 @@ namespace MemberMicroservice.Repository
                 client.BaseAddress = new Uri("https://localhost:44387/api/");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = new HttpResponseMessage();
-                response = client.GetAsync("Claims?policyID="+policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit).Result;
+                response = client.GetAsync("Claims/SubmitClaim?policyID=" + policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit).Result;
                 string claimStatus = response.Content.ReadAsStringAsync().Result;
                 return claimStatus;
             }

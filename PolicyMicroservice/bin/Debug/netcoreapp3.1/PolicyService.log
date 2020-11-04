@@ -185,3 +185,33 @@ INFO  09:24:13 GetChainOfProviders Accesed
 INFO  09:25:55 GetEligibleBenefit is accessed
 INFO  09:26:08 GetEligibleBenefit is accessed
 INFO  09:26:12 GetEligibleBenefit is accessed
+INFO  11:39:39 Application started. Press Ctrl+C to shut down.
+INFO  11:39:39 Application started. Press Ctrl+C to shut down.
+INFO  11:39:39 Hosting environment: Development
+INFO  11:39:39 Hosting environment: Development
+INFO  11:39:39 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  11:39:39 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  11:40:12 GetEligibleClaimAmount is accesed
+INFO  11:40:13 GetEligibleBenefit is accessed
+INFO  11:40:13 GetChainOfProviders Accesed
+INFO  11:54:24 Application started. Press Ctrl+C to shut down.
+INFO  11:54:24 Application started. Press Ctrl+C to shut down.
+INFO  11:54:24 Hosting environment: Development
+INFO  11:54:24 Hosting environment: Development
+INFO  11:54:24 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  11:54:24 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  11:56:53 GetEligibleClaimAmount is accesed
+INFO  11:56:53 GetEligibleBenefit is accessed
+INFO  11:56:54 GetChainOfProviders Accesed
+INFO  12:01:53 GetEligibleBenefit is accessed
+INFO  12:08:09 GetEligibleBenefit is accessed
+INFO  12:10:03 GetEligibleBenefit is accessed
+INFO  12:18:19 Application started. Press Ctrl+C to shut down.
+INFO  12:18:19 Application started. Press Ctrl+C to shut down.
+INFO  12:18:19 Hosting environment: Development
+INFO  12:18:19 Hosting environment: Development
+INFO  12:18:19 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  12:18:19 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  12:24:57 GetEligibleClaimAmount is accesed
+INFO  12:24:57 GetEligibleBenefit is accessed
+INFO  12:24:57 GetChainOfProviders Accesed
