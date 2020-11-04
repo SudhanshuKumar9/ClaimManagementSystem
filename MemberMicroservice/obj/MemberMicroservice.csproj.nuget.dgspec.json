@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\MemberMicroservice.csproj": {}
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\MemberMicroservice.csproj": {
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\MemberMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
         "projectName": "MemberMicroservice",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\MemberMicroservice.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\obj\\",
+        "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
+        "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,10 +41,6 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.9, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[12.0.3, )"
             }
           },
           "imports": [

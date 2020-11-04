@@ -59,13 +59,18 @@ namespace MemberMicroservice.Repository
             }
 
         };
-        public MemberPremium viewBill( int PolicyID, int MemberID)
+        public MemberPremium ViewBill( int PolicyID, int MemberID)
         {
             MemberPremium member = (from p in premiumDetails where (p.MemberID == MemberID && p.PolicyID == PolicyID) select p).FirstOrDefault();
             return member;
         }
 
-        public string getClaimStatus(int ClaimID, int PolicyID)
+        public Member GetMember(LoginModel model)
+        {
+            return members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault();
+        }
+
+        public string GetClaimStatus(int ClaimID, int PolicyID)
         {
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
@@ -79,5 +84,6 @@ namespace MemberMicroservice.Repository
                 return stringData;
             }
         }
+
     }
 }
