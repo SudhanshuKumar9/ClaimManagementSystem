@@ -1,0 +1,24 @@
+INFO  10:31:14 Application started. Press Ctrl+C to shut down.
+INFO  10:31:14 Application started. Press Ctrl+C to shut down.
+INFO  10:31:14 Hosting environment: Development
+INFO  10:31:14 Hosting environment: Development
+INFO  10:31:14 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  10:31:14 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  10:32:23 GetChainOfProviders Accesed
+INFO  10:33:13 GetChainOfProviders Accesed
+INFO  08:31:11 Application started. Press Ctrl+C to shut down.
+INFO  08:31:11 Application started. Press Ctrl+C to shut down.
+INFO  08:31:11 Hosting environment: Development
+INFO  08:31:11 Hosting environment: Development
+INFO  08:31:11 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  08:31:11 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  08:31:13 GetChainOfProviders Accesed
+INFO  08:32:32 GetEligibleBenefit is accessed
+INFO  08:37:07 Application started. Press Ctrl+C to shut down.
+INFO  08:37:07 Application started. Press Ctrl+C to shut down.
+INFO  08:37:07 Hosting environment: Development
+INFO  08:37:07 Hosting environment: Development
+INFO  08:37:07 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  08:37:07 Content root path: D:\.NET\MFPE\PolicyMicroservice
+INFO  08:37:28 GetEligibleClaimAmount is accesed
+INFO  08:37:41 GetEligibleClaimAmount is accesed
