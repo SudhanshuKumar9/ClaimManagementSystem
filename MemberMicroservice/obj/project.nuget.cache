@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3DF6FiJnnr+PKRh8ra7MAqJlckSpSXPhiUPix+IH0BZrd8gmAVwr9sxGk1CdjtZtU+5SRBYhZ+Mxgh/PJMso3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\MFPE Project\\MemberMicroservice\\MemberMicroservice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
