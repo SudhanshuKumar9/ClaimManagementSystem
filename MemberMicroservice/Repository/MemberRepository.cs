@@ -85,5 +85,19 @@ namespace MemberMicroservice.Repository
             }
         }
 
+        public string SubmitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefit)
+        {
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            using (HttpClient client = new HttpClient(clientHandler))
+            {
+                client.BaseAddress = new Uri("https://localhost:44387/api/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response = new HttpResponseMessage();
+                response = client.GetAsync("Claims?policyID="+policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit).Result;
+                string claimStatus = response.Content.ReadAsStringAsync().Result;
+                return claimStatus;
+            }
+        }
     }
 }

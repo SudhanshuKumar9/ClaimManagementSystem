@@ -11,5 +11,6 @@ namespace MemberMicroservice.Repository
         public MemberPremium ViewBill(int PolicyID,  int MemberID);
         Member GetMember(LoginModel model);
         public string GetClaimStatus(int ClaimID, int PolicyID);
+        public string SubmitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefit);
     }
 }

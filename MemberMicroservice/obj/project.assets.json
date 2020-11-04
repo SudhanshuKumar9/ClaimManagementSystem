@@ -83,19 +83,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sud44\\.nuget\\packages\\": {}
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
+      "projectUniqueName": "E:\\MFPE Project\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
       "projectName": "MemberMicroservice",
-      "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
-      "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New folder\\MemberMicroservice\\obj\\",
+      "projectPath": "E:\\MFPE Project\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "E:\\MFPE Project\\ClaimManagementSystem\\MemberMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
