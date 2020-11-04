@@ -13,8 +13,10 @@ C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\bin\Debug\netcoreap
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.runtimeconfig.dev.json
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.dll
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.pdb
-C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CoreCompileInputs.cache
-C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.dll
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.pdb
 C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lenovo\source\repos\MFPE Project\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CopyComplete

@@ -9,6 +9,7 @@ namespace MemberMicroservice.Repository
 {
     public interface IMemberRepository
     {
-        public MemberPremium viewBill(int PolicyID,  int MemberID);
-    }
+        public MemberPremium viewBill(int PolicyID, int MemberID);
+        public string getClaimStatus(int ClaimID, int PolicyID);
+      }
 }

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace MemberMicroservice.Repository
@@ -61,6 +63,21 @@ namespace MemberMicroservice.Repository
         {
             MemberPremium member = (from p in premiumDetails where (p.MemberID == MemberID && p.PolicyID == PolicyID) select p).FirstOrDefault();
             return member;
+        }
+
+        public string getClaimStatus(int ClaimID, int PolicyID)
+        {
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            using (HttpClient client = new HttpClient(clientHandler))
+            {
+                client.BaseAddress = new Uri("https://localhost:44387/api/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response = new HttpResponseMessage();
+                response = client.GetAsync("Claims?claimID=" + ClaimID + "&policyID=" + PolicyID).Result;
+                string stringData = response.Content.ReadAsStringAsync().Result;
+                return stringData;
+            }
         }
     }
 }

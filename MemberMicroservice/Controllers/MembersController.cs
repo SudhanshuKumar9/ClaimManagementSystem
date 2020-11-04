@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using MemberMicroservice.Models;
 using MemberMicroservice.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace MemberMicroservice.Controllers
 {
@@ -50,6 +53,12 @@ namespace MemberMicroservice.Controllers
         public async Task<ActionResult<MemberPremium>> viewBill(int PolicyID, int MemberID)
         {
             return Ok(_memberRepository.viewBill(PolicyID, MemberID));
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<string>> getClaimStatus([FromQuery]int ClaimID,[FromQuery] int PolicyID)
+        {  
+            return Ok(_memberRepository.getClaimStatus(ClaimID, PolicyID));
         }
     }
 
