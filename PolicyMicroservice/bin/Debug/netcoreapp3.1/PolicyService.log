@@ -239,3 +239,38 @@ INFO  08:00:36 Content root path: C:\Users\ASUS\Desktop\ClaimsManagement\PolicyM
 INFO  08:00:37 GetChainOfProviders Accesed
 INFO  08:00:46 GetEligibleBenefit is accessed
 INFO  08:00:53 GetEligibleClaimAmount is accesed
+INFO  04:23:18 Application started. Press Ctrl+C to shut down.
+INFO  04:23:18 Application started. Press Ctrl+C to shut down.
+INFO  04:23:18 Hosting environment: Development
+INFO  04:23:18 Hosting environment: Development
+INFO  04:23:18 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  04:23:18 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  04:37:54 GetEligibleClaimAmount is accesed
+INFO  04:37:54 GetEligibleBenefit is accessed
+INFO  04:37:54 GetChainOfProviders Accesed
+INFO  04:41:12 GetEligibleClaimAmount is accesed
+INFO  04:41:12 GetEligibleBenefit is accessed
+INFO  04:41:12 GetChainOfProviders Accesed
+INFO  04:42:28 GetEligibleClaimAmount is accesed
+ERROR 04:43:34 Exception in GetEligibleClaimAmountObject reference not set to an instance of an object.
+INFO  04:49:11 Application started. Press Ctrl+C to shut down.
+INFO  04:49:11 Application started. Press Ctrl+C to shut down.
+INFO  04:49:11 Hosting environment: Development
+INFO  04:49:11 Hosting environment: Development
+INFO  04:49:11 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  04:49:11 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  04:49:24 GetEligibleClaimAmount is accesed
+ERROR 04:50:14 Exception in GetEligibleClaimAmountObject reference not set to an instance of an object.
+INFO  05:08:44 Application started. Press Ctrl+C to shut down.
+INFO  05:08:44 Application started. Press Ctrl+C to shut down.
+INFO  05:08:44 Hosting environment: Development
+INFO  05:08:44 Hosting environment: Development
+INFO  05:08:44 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  05:08:44 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice
+INFO  05:08:57 GetEligibleClaimAmount is accesed
+ERROR 05:08:58 Exception in GetEligibleClaimAmountProcessing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+INFO  05:11:16 GetEligibleClaimAmount is accesed
+ERROR 05:11:16 Exception in GetEligibleClaimAmountProcessing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+INFO  05:23:14 GetEligibleClaimAmount is accesed
+INFO  05:23:14 GetEligibleBenefit is accessed
+INFO  05:23:15 GetChainOfProviders Accesed

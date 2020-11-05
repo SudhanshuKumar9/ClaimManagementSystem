@@ -1,0 +1,60 @@
+﻿@model MemberMicroservice.Models.MemberPremium
+
+@{
+    ViewData["Title"] = "ViewBill";
+}
+
+@if (Model != null)
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("MemberID")
+            </th>
+            <th>
+                @Html.DisplayName("PolicyID")
+            </th>
+            <th>
+                @Html.DisplayName("PremiumDue")
+            </th>
+            <th>
+                @Html.DisplayName("PaymentDetails")
+            </th>
+            <th>
+                @Html.DisplayName("DueDate")
+            </th>
+            <th>
+                @Html.DisplayName("LastPremiumPaidDate")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.MemberID)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PolicyID)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PremiumDue)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.PaymentDetails)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.DueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.LastPremiumPaidDate)
+            </td>
+            <td>
+    </tbody>
+</table>
+}
+else
+{
+  <h2>No Policy  has been subscribed.</h2>
+}

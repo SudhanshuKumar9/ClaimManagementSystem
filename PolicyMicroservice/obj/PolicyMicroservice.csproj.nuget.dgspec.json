@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\ClaimsManagement\\PolicyMicroservice\\PolicyMicroservice.csproj": {}
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\PolicyMicroservice\\PolicyMicroservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\ClaimsManagement\\PolicyMicroservice\\PolicyMicroservice.csproj": {
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\PolicyMicroservice\\PolicyMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\ClaimsManagement\\PolicyMicroservice\\PolicyMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\PolicyMicroservice\\PolicyMicroservice.csproj",
         "projectName": "PolicyMicroservice",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\ClaimsManagement\\PolicyMicroservice\\PolicyMicroservice.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\ClaimsManagement\\PolicyMicroservice\\obj\\",
+        "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\PolicyMicroservice\\PolicyMicroservice.csproj",
+        "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\PolicyMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
               "target": "Package",
               "version": "[3.1.5, )"

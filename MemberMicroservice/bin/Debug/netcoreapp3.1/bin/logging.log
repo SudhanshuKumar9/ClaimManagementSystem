@@ -71,3 +71,30 @@ INFO  01:06:06 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservi
 INFO  01:06:06 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
 INFO  01:06:35 ViewBills Accesed
 INFO  01:06:47 ViewBills Accesed
+INFO  04:22:45 Application started. Press Ctrl+C to shut down.
+INFO  04:22:45 Application started. Press Ctrl+C to shut down.
+INFO  04:22:45 Hosting environment: Development
+INFO  04:22:45 Hosting environment: Development
+INFO  04:22:45 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\MemberMicroservice
+INFO  04:22:45 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\MemberMicroservice
+INFO  04:25:48 GetClaimStatus Accesed
+INFO  04:27:12 Application started. Press Ctrl+C to shut down.
+INFO  04:27:12 Application started. Press Ctrl+C to shut down.
+INFO  04:27:12 Hosting environment: Development
+INFO  04:27:12 Hosting environment: Development
+INFO  04:27:12 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\MemberMicroservice
+INFO  04:27:12 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\MemberMicroservice
+INFO  04:36:53 GetClaimStatus Accesed
+INFO  04:37:49 SubmitClaim Accesed
+INFO  04:41:11 SubmitClaim Accesed
+INFO  04:41:17 ViewBills Accesed
+INFO  04:42:28 SubmitClaim Accesed
+INFO  04:49:24 SubmitClaim Accesed
+INFO  05:08:56 SubmitClaim Accesed
+INFO  05:11:15 SubmitClaim Accesed
+INFO  05:11:34 GetClaimStatus Accesed
+INFO  05:11:45 GetClaimStatus Accesed
+INFO  05:11:53 GetClaimStatus Accesed
+INFO  05:11:58 ViewBills Accesed
+INFO  05:23:13 SubmitClaim Accesed
+INFO  05:23:23 ViewBills Accesed

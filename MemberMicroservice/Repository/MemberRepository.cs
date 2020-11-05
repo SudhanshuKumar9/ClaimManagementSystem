@@ -33,7 +33,7 @@ namespace MemberMicroservice.Repository
                 client.BaseAddress = new Uri("https://localhost:44387/api/");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = new HttpResponseMessage();
-                response = client.GetAsync("Claims?claimID=" + claimID + "&policyID=" + policyID).Result;
+                response = client.GetAsync("Claims/getClaimStatus?claimID=" + claimID + "&policyID=" + policyID).Result;
                 string stringData = response.Content.ReadAsStringAsync().Result;
                 return stringData;
             }

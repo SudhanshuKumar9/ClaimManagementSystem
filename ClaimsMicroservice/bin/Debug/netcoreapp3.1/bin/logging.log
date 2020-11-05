@@ -1327,3 +1327,24 @@ INFO  01:21:19 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimMan
 INFO  01:21:47 SubmitClaim Method Called
 ERROR 01:21:51 Exception in SubmitClaimOne or more errors occurred. (One or more errors occurred. (No connection could be made because the target machine actively refused it.))
 INFO  01:24:05 SubmitClaim Method Called
+INFO  04:22:13 Application started. Press Ctrl+C to shut down.
+INFO  04:22:13 Application started. Press Ctrl+C to shut down.
+INFO  04:22:13 Hosting environment: Development
+INFO  04:22:13 Hosting environment: Development
+INFO  04:22:13 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\ClaimsMicroservice
+INFO  04:22:13 Content root path: C:\Users\sud44\OneDrive\Desktop\New Pull\ClaimsMicroservice
+INFO  04:36:55 GetClaimStatus Method Called
+INFO  04:37:50 SubmitClaim Method Called
+INFO  04:41:11 SubmitClaim Method Called
+INFO  04:42:28 SubmitClaim Method Called
+ERROR 04:43:45 Exception in SubmitClaimOne or more errors occurred. (Input string was not in a correct format.)
+INFO  04:49:24 SubmitClaim Method Called
+ERROR 04:50:14 Exception in SubmitClaimOne or more errors occurred. (Input string was not in a correct format.)
+INFO  05:08:56 SubmitClaim Method Called
+ERROR 05:08:58 Exception in SubmitClaimOne or more errors occurred. (Input string was not in a correct format.)
+INFO  05:11:16 SubmitClaim Method Called
+ERROR 05:11:16 Exception in SubmitClaimOne or more errors occurred. (Input string was not in a correct format.)
+INFO  05:11:34 GetClaimStatus Method Called
+INFO  05:11:45 GetClaimStatus Method Called
+INFO  05:11:53 GetClaimStatus Method Called
+INFO  05:23:13 SubmitClaim Method Called

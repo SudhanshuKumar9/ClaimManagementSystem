@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj": {}
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\MemberMicroservice\\MemberMicroservice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj": {
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\MemberMicroservice\\MemberMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\MemberMicroservice\\MemberMicroservice.csproj",
         "projectName": "MemberMicroservice",
-        "projectPath": "C:\\Users\\lenovo\\Desktop\\New folder\\MemberMicroservice\\MemberMicroservice.csproj",
-        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Desktop\\New folder\\MemberMicroservice\\obj\\",
+        "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\MemberMicroservice\\MemberMicroservice.csproj",
+        "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\New Pull\\MemberMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

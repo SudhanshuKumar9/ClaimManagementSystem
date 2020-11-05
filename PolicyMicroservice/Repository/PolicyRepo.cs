@@ -1,8 +1,11 @@
-﻿using PolicyMicroservice.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using PolicyMicroservice.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
+using System.Web.Http;
 
 namespace PolicyMicroservice.Repository
 {
@@ -30,8 +33,23 @@ namespace PolicyMicroservice.Repository
         public double GetEligibleClaimAmount(int policyId, int memberId, int benefitId)
             
         {
-            double claimAmt = PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId==benefitId).CapAmountBenefits;
-            return claimAmt;
+            //if (item == null)
+            //{
+            //    throw new HttpResponseException(HttpStatusCode.NotFound);
+            //}
+            //return item;
+            
+            if(PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId)==null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            else
+            {
+                double claimAmt = PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId).CapAmountBenefits;
+                return claimAmt;
+            }
+           
+           
         }
 
 
