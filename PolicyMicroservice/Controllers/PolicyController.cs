@@ -93,7 +93,8 @@ namespace PolicyMicroservice.Controllers
         /// <param name="MemberID"></param>
         /// <param name="BenefitId"></param>
         /// <returns></returns>
-
+        /// 
+        //https://localhost:44373/api/Policy/GetEligibleClaimAmount?PolicyId=1&MemberID=1&BenefitId=1
         [HttpGet]
         [Route("GetEligibleClaimAmount")]
         public IActionResult GetEligibleClaimAmount([FromQuery]int policyId,[FromQuery] int memberId,[FromQuery] int benefitId)

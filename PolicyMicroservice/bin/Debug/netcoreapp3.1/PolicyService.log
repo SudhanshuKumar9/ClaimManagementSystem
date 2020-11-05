@@ -230,3 +230,12 @@ INFO  12:57:08 GetChainOfProviders Accesed
 INFO  12:57:18 GetEligibleClaimAmount is accesed
 INFO  12:57:18 GetEligibleBenefit is accessed
 INFO  12:57:18 GetChainOfProviders Accesed
+INFO  08:00:36 Application started. Press Ctrl+C to shut down.
+INFO  08:00:36 Application started. Press Ctrl+C to shut down.
+INFO  08:00:36 Hosting environment: Development
+INFO  08:00:36 Hosting environment: Development
+INFO  08:00:36 Content root path: C:\Users\ASUS\Desktop\ClaimsManagement\PolicyMicroservice
+INFO  08:00:36 Content root path: C:\Users\ASUS\Desktop\ClaimsManagement\PolicyMicroservice
+INFO  08:00:37 GetChainOfProviders Accesed
+INFO  08:00:46 GetEligibleBenefit is accessed
+INFO  08:00:53 GetEligibleClaimAmount is accesed
