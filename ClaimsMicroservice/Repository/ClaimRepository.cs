@@ -40,7 +40,7 @@ namespace ClaimsMicroservice.Repository
             string benefitFetched = BenefitFetch(policyID, memberID);
             if(benefitFetched.Equals("Invalid Data")||claimAmount == -1)
             {
-                return status = "Provide valid details";
+                return status = "Invalid Details Provided";
             }
             else if ((claimAmount >= claimAmt) && (benefitFetched.Equals(benefit)) && IsHospital(policyID, hospitalID).Result)
             {

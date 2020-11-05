@@ -70,8 +70,6 @@ C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\b
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csprojAssemblyReference.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.AssemblyInfoInputs.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.AssemblyInfo.cs
-C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CoreCompileInputs.cache
-C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.RazorTargetAssemblyInfo.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\staticwebassets\MemberMicroservice.StaticWebAssets.Manifest.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\staticwebassets\MemberMicroservice.StaticWebAssets.xml
@@ -224,7 +222,6 @@ C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\b
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\bin\Debug\netcoreapp3.1\appsettings.json
@@ -268,3 +265,9 @@ C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\obj\Debug\netcore
 C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.dll
 C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.pdb
 C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.genruntimeconfig.cache
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cache

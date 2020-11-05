@@ -1413,3 +1413,22 @@ INFO  08:31:52 SubmitClaim Method Called
 INFO  08:32:49 SubmitClaim Method Called
 INFO  08:33:03 SubmitClaim Method Called
 INFO  08:33:54 SubmitClaim Method Called
+INFO  11:29:00 Application started. Press Ctrl+C to shut down.
+INFO  11:29:00 Application started. Press Ctrl+C to shut down.
+INFO  11:29:00 Hosting environment: Development
+INFO  11:29:00 Hosting environment: Development
+INFO  11:29:00 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:29:00 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  11:33:01 GetClaimStatus Method Called
+INFO  11:33:08 GetClaimStatus Method Called
+INFO  11:33:24 SubmitClaim Method Called
+INFO  12:05:41 Application started. Press Ctrl+C to shut down.
+INFO  12:05:41 Application started. Press Ctrl+C to shut down.
+INFO  12:05:41 Hosting environment: Development
+INFO  12:05:41 Hosting environment: Development
+INFO  12:05:41 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:05:41 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:06:10 GetClaimStatus Method Called
+INFO  12:06:31 SubmitClaim Method Called
+INFO  12:06:50 SubmitClaim Method Called
+INFO  12:07:14 SubmitClaim Method Called

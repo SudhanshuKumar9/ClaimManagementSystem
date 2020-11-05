@@ -161,3 +161,27 @@ INFO  08:32:49 SubmitClaim Accesed
 INFO  08:33:03 SubmitClaim Accesed
 INFO  08:33:11 ViewBills Accesed
 INFO  08:33:54 SubmitClaim Accesed
+INFO  11:32:48 Application started. Press Ctrl+C to shut down.
+INFO  11:32:48 Application started. Press Ctrl+C to shut down.
+INFO  11:32:48 Hosting environment: Development
+INFO  11:32:48 Hosting environment: Development
+INFO  11:32:48 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  11:32:48 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  11:33:00 GetClaimStatus Accesed
+INFO  11:33:08 GetClaimStatus Accesed
+INFO  11:33:24 SubmitClaim Accesed
+INFO  12:05:46 Application started. Press Ctrl+C to shut down.
+INFO  12:05:46 Application started. Press Ctrl+C to shut down.
+INFO  12:05:46 Hosting environment: Development
+INFO  12:05:46 Hosting environment: Development
+INFO  12:05:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:05:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:06:10 GetClaimStatus Accesed
+INFO  12:06:31 SubmitClaim Accesed
+INFO  12:06:50 SubmitClaim Accesed
+INFO  12:06:56 ViewBills Accesed
+ERROR 12:06:56 Exception in ViewBillsProcessing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+INFO  12:07:01 ViewBills Accesed
+ERROR 12:07:01 Exception in ViewBillsProcessing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+INFO  12:07:14 SubmitClaim Accesed
+INFO  12:07:17 ViewBills Accesed
