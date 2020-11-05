@@ -207,3 +207,7 @@ C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice\bin\Debug\netcoreapp
 C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice\obj\Debug\netcoreapp3.1\PolicyMicroservice.csproj.CoreCompileInputs.cache
 C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice\obj\Debug\netcoreapp3.1\PolicyMicroservice.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sud44\OneDrive\Desktop\New Pull\PolicyMicroservice\obj\Debug\netcoreapp3.1\PolicyMicroservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

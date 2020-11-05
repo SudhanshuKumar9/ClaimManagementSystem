@@ -1,4 +1,6 @@
-﻿using ClaimsMicroservice.Models;
+﻿//-----> Contributed By- Abhishek Tiwari (849729)
+
+using ClaimsMicroservice.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,7 @@ namespace ClaimsMicroservice
                 ClaimID = 1,
                 ClaimStatus = "Pending",
                 PolicyID = 1,
-                AmountClaimed = 12300,
+                AmountClaimed = 45300,
                 BenefitsAvailed = "Medicine & Checkup",
                 HospitalID = 1,
                 Remarks = "Verified",
@@ -26,7 +28,7 @@ namespace ClaimsMicroservice
                 ClaimID = 2,
                 ClaimStatus = "Rejected",
                 PolicyID = 1,
-                AmountClaimed = 12300,
+                AmountClaimed = 54340,
                 BenefitsAvailed = "Medicine & Checkup",
                 HospitalID = 1,
                 Remarks = "Verified",
@@ -37,10 +39,21 @@ namespace ClaimsMicroservice
                 ClaimID = 3,
                 ClaimStatus = "Invalid Details",
                 PolicyID = 3,
-                AmountClaimed = 12300,
+                AmountClaimed = 34300,
                 BenefitsAvailed = "Medicine & Checkup",
                 HospitalID = 1,
                 Remarks = "Verified",
+                Settled = "False"
+            },
+            new Claim()
+            {
+                ClaimID = 4,
+                ClaimStatus = "Pending",
+                PolicyID = 2,
+                AmountClaimed = 45300,
+                BenefitsAvailed = "Accidental",
+                HospitalID = 2,
+                Remarks = "Not Verified",
                 Settled = "False"
             }
         };

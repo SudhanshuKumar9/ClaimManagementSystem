@@ -1,4 +1,6 @@
-﻿using System;
+﻿//-----> Contributed By- Abhishek Tiwari (849729)
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,6 +17,5 @@ namespace ClaimsMicroservice.Models
         public string BenefitsAvailed { get; set; }
         public double AmountClaimed { get; set; }
         public string Settled { get; set; }
-
     }
 }

@@ -23,10 +23,26 @@ namespace PolicyMicroservice.Repository
 
         public string GetEligibleBenefits(int policyId, int memberId)
         {
-            var benefitId = PolicyData.memberpolicyList.Where(p => p.PolicyId == policyId && p.MemberId == memberId).FirstOrDefault();
-            int id = benefitId.BenefitId;
-            string benefitName = PolicyData.benefitList.FirstOrDefault(b => b.BenefitId == id).BenefitName;
-            return benefitName;
+
+            try
+            {
+                var benefitId = PolicyData.memberpolicyList.Where(p => p.PolicyId == policyId && p.MemberId == memberId).FirstOrDefault();
+                if (benefitId == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+
+                    int id = benefitId.BenefitId;
+                    string benefitName = PolicyData.benefitList.FirstOrDefault(b => b.BenefitId == id).BenefitName;
+                    return benefitName;
+                }
+            }
+            catch (Exception e)
+            {
+                return "No Data found according to the input";
+            }
 
         }
 

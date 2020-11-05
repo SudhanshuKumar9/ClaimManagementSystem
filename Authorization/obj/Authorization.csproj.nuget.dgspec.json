@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MFPE\\Authorization\\Authorization.csproj": {}
+    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {}
   },
   "projects": {
-    "D:\\MFPE\\Authorization\\Authorization.csproj": {
+    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MFPE\\Authorization\\Authorization.csproj",
+        "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
         "projectName": "Authorization",
-        "projectPath": "D:\\MFPE\\Authorization\\Authorization.csproj",
-        "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
-        "outputPath": "D:\\MFPE\\Authorization\\obj\\",
+        "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
+        "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Abhishek Tiwari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

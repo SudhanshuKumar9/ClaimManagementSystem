@@ -8700,20 +8700,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sud44\\.nuget\\packages\\": {}
+    "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MFPE\\MemberPortal\\MemberPortal.csproj",
+      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
       "projectName": "MemberPortal",
-      "projectPath": "D:\\MFPE\\MemberPortal\\MemberPortal.csproj",
-      "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
-      "outputPath": "D:\\MFPE\\MemberPortal\\obj\\",
+      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
+      "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Abhishek Tiwari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8777,7 +8782,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
