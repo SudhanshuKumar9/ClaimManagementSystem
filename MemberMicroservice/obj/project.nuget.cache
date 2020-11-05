@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/xAXxb4w7JD9hxgMF59YTp8ed+qiAXR8DkJiUvtRjcjZPo1meLuDCLBCnIrHCIQhPdThZKTUGhPVCJkBqNYqaA==",
+  "dgSpecHash": "4l4Qp8EELzsMhyI7GQ3KY8H1Hl+yp2hcaMLj325tGHlFL0S3FygAQFuN7Glqn4MRssu7kZOveEjGvT91/CprOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
+  "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
   ],
   "logs": []
 }

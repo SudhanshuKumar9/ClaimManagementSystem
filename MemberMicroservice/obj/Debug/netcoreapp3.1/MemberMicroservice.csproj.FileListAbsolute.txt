@@ -78,3 +78,23 @@ C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\o
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.dll
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.pdb
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.genruntimeconfig.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\appsettings.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.exe
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.deps.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.runtimeconfig.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.runtimeconfig.dev.json
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.dll
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\bin\Debug\netcoreapp3.1\MemberMicroservice.pdb
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csprojAssemblyReference.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.AssemblyInfoInputs.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.AssemblyInfo.cs
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.csproj.CoreCompileInputs.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.MvcApplicationPartsAssemblyInfo.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.RazorTargetAssemblyInfo.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\staticwebassets\MemberMicroservice.StaticWebAssets.Manifest.cache
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\staticwebassets\MemberMicroservice.StaticWebAssets.xml
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.dll
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.pdb
+E:\MFPE\ClaimManagementSystem\MemberMicroservice\obj\Debug\netcoreapp3.1\MemberMicroservice.genruntimeconfig.cache
