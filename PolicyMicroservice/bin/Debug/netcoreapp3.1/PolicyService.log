@@ -318,3 +318,28 @@ INFO  07:11:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimMan
 INFO  07:11:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
 INFO  07:12:53 GetEligibleClaimAmount is accesed
 INFO  07:12:53 GetEligibleBenefit is accessed
+INFO  08:16:29 Application started. Press Ctrl+C to shut down.
+INFO  08:16:29 Application started. Press Ctrl+C to shut down.
+INFO  08:16:29 Hosting environment: Development
+INFO  08:16:29 Hosting environment: Development
+INFO  08:16:29 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\PolicyMicroservice
+INFO  08:16:29 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\PolicyMicroservice
+INFO  08:16:30 GetChainOfProviders Accesed
+INFO  08:16:35 GetChainOfProviders Accesed
+INFO  08:21:26 Application started. Press Ctrl+C to shut down.
+INFO  08:21:26 Application started. Press Ctrl+C to shut down.
+INFO  08:21:27 Hosting environment: Development
+INFO  08:21:28 Hosting environment: Development
+INFO  08:21:28 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\PolicyMicroservice
+INFO  08:21:28 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\PolicyMicroservice
+INFO  08:30:50 GetEligibleClaimAmount is accesed
+INFO  08:30:50 GetEligibleBenefit is accessed
+INFO  08:30:51 GetChainOfProviders Accesed
+INFO  08:31:52 GetEligibleClaimAmount is accesed
+INFO  08:31:53 GetEligibleBenefit is accessed
+INFO  08:32:50 GetEligibleClaimAmount is accesed
+INFO  08:32:50 GetEligibleBenefit is accessed
+INFO  08:33:03 GetEligibleClaimAmount is accesed
+INFO  08:33:03 GetEligibleBenefit is accessed
+INFO  08:33:54 GetEligibleClaimAmount is accesed
+INFO  08:33:54 GetEligibleBenefit is accessed

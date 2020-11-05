@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace PolicyMicroservice.Models
 {
+    /// <summary>
+    /// Contributed By Anupam Bhattacharyya(848843)
+    /// </summary>
     public class MemberPolicy
     {
         

@@ -146,3 +146,18 @@ INFO  07:11:49 Hosting environment: Development
 INFO  07:11:49 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
 INFO  07:11:49 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\MemberMicroservice
 INFO  07:12:50 SubmitClaim Accesed
+INFO  08:22:59 Application started. Press Ctrl+C to shut down.
+INFO  08:22:59 Application started. Press Ctrl+C to shut down.
+INFO  08:22:59 Hosting environment: Development
+INFO  08:22:59 Hosting environment: Development
+INFO  08:22:59 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice
+INFO  08:22:59 Content root path: C:\Users\ASUS\Desktop\ClaimManagementSyatem\MemberMicroservice
+INFO  08:30:46 SubmitClaim Accesed
+INFO  08:31:01 GetClaimStatus Accesed
+INFO  08:31:10 GetClaimStatus Accesed
+INFO  08:31:15 ViewBills Accesed
+INFO  08:31:52 SubmitClaim Accesed
+INFO  08:32:49 SubmitClaim Accesed
+INFO  08:33:03 SubmitClaim Accesed
+INFO  08:33:11 ViewBills Accesed
+INFO  08:33:54 SubmitClaim Accesed

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PolicyMicroservice.Repository
 {
+    /// <summary>
+    /// Contributed By Anupam Bhattacharyya(848843)
+    /// </summary>
     public interface IPolicyRepo
     {
         public IEnumerable<ProviderPolicy> GetChainOfProviders(int policyNo);

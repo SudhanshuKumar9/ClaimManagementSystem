@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using PolicyMicroservice.Models;
 using System;
 using System.Collections.Generic;
@@ -9,14 +10,44 @@ using System.Web.Http;
 
 namespace PolicyMicroservice.Repository
 {
+    /// <summary>
+    /// Contributed By Anupam Bhattacharyya(848843)
+    /// </summary>
     public class PolicyRepo : IPolicyRepo
     {
-        
-       
+        /// <summary>
+        /// Repository Method for returning chain of Providers
+        /// </summary>
+        /// <param name="policyId"></param>
+        /// <returns>List of Providers</returns>
+ 
        public IEnumerable<ProviderPolicy> GetChainOfProviders(int policyId)
         {
-            return PolicyData.providerpolicyList.Where(p => p.PolicyId == policyId).ToList();
+            try
+            {
+                if (PolicyData.providerpolicyList.Where(p => p.PolicyId == policyId).ToList() == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+
+                }
+                else
+                {
+                    return PolicyData.providerpolicyList.Where(p => p.PolicyId == policyId).ToList();
+
+                }
+            }
+            catch (Exception e)
+            {
+                return (IEnumerable<ProviderPolicy>)e.ToString().ToList(); ;
+
+            }
         }
+        /// <summary>
+        /// Return the Benefits available Under each policy for each member
+        /// </summary>
+        /// <param name="policyId"></param>
+        /// <param name="memberId"></param>
+        /// <returns>Benefit Name</returns>
 
         public string GetEligibleBenefits(int policyId, int memberId)
         {
@@ -36,33 +67,45 @@ namespace PolicyMicroservice.Repository
                     return benefitName;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                return "Invalid";
+                return "Invalid Data";
             }
 
         }
 
-        public double GetEligibleClaimAmount(int policyId, int memberId, int benefitId)
+
+    /// <summary>
+    /// Returns the Eligible Claim Amount for each policy,member and benefit
+    /// </summary>
+    /// <param name="policyId"></param>
+    /// <param name="memberId"></param>
+    /// <param name="benefitId"></param>
+    /// <returns>Eligible claim Amount</returns>
+
+    public double GetEligibleClaimAmount(int policyId, int memberId, int benefitId)
             
         {
-            //if (item == null)
-            //{
-            //    throw new HttpResponseException(HttpStatusCode.NotFound);
-            //}
-            //return item;
-            
-            if(PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId)==null)
+            try
             {
-                return 0.00;
+                if (PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId) == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    double claimAmt = PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId).CapAmountBenefits;
+                    return claimAmt;
+                }
             }
-            else
+            catch(Exception)
             {
-                double claimAmt = PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId).CapAmountBenefits;
-                return claimAmt;
+                double errorValue = -1;
+                return errorValue;
+
             }
-           
-           
+
+
         }
 
 

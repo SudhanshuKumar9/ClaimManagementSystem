@@ -8,6 +8,10 @@ using PolicyMicroservice.Repository;
 
 namespace PolicyMicroservice.Controllers
 {
+
+    /// <summary>
+    /// Contributed By Anupam Bhattacharyya(848843)
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class PolicyController : ControllerBase
