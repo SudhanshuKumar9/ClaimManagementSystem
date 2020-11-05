@@ -35,10 +35,14 @@ namespace ClaimsMicroservice.Repository
 
         public async Task<string> SubmitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefit)
         {
-            string status = "Invalid details";
+            string status = "";
             double claimAmount = ClaimAmountFetch(policyID, memberID, benefitID);
             string benefitFetched = BenefitFetch(policyID, memberID);
-            if ((claimAmount >= claimAmt) && (benefitFetched.Equals(benefit)) && IsHospital(policyID, hospitalID).Result)
+            if(benefitFetched.Equals("Invalid")||claimAmount == 0.00)
+            {
+                return status = "Provide valid details";
+            }
+            else if ((claimAmount >= claimAmt) && (benefitFetched.Equals(benefit)) && IsHospital(policyID, hospitalID).Result)
             {
                 status = "Pending Action";
                 Claim claims = new Claim()

@@ -293,3 +293,28 @@ INFO  06:33:53 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimMan
 INFO  06:36:09 GetEligibleClaimAmount is accesed
 ERROR 06:36:10 Exception in GetEligibleClaimAmountProcessing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
 INFO  06:36:10 GetEligibleBenefit is accessed
+INFO  06:45:45 Application started. Press Ctrl+C to shut down.
+INFO  06:45:45 Application started. Press Ctrl+C to shut down.
+INFO  06:45:45 Hosting environment: Development
+INFO  06:45:45 Hosting environment: Development
+INFO  06:45:45 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  06:45:45 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  06:52:10 GetEligibleClaimAmount is accesed
+INFO  06:52:11 GetEligibleBenefit is accessed
+INFO  06:52:11 GetChainOfProviders Accesed
+INFO  06:57:46 Application started. Press Ctrl+C to shut down.
+INFO  06:57:46 Application started. Press Ctrl+C to shut down.
+INFO  06:57:46 Hosting environment: Development
+INFO  06:57:46 Hosting environment: Development
+INFO  06:57:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  06:57:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  06:58:59 GetEligibleClaimAmount is accesed
+INFO  06:59:00 GetEligibleBenefit is accessed
+INFO  07:11:46 Application started. Press Ctrl+C to shut down.
+INFO  07:11:46 Application started. Press Ctrl+C to shut down.
+INFO  07:11:46 Hosting environment: Development
+INFO  07:11:46 Hosting environment: Development
+INFO  07:11:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  07:11:46 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\PolicyMicroservice
+INFO  07:12:53 GetEligibleClaimAmount is accesed
+INFO  07:12:53 GetEligibleBenefit is accessed

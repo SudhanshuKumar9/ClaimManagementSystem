@@ -15,10 +15,7 @@ namespace PolicyMicroservice.Repository
        
        public IEnumerable<ProviderPolicy> GetChainOfProviders(int policyId)
         {
-            
             return PolicyData.providerpolicyList.Where(p => p.PolicyId == policyId).ToList();
-           
-
         }
 
         public string GetEligibleBenefits(int policyId, int memberId)
@@ -41,7 +38,7 @@ namespace PolicyMicroservice.Repository
             }
             catch (Exception e)
             {
-                return "No Data found according to the input";
+                return "Invalid";
             }
 
         }
@@ -57,7 +54,7 @@ namespace PolicyMicroservice.Repository
             
             if(PolicyData.memberpolicyList.FirstOrDefault(p => p.PolicyId == policyId && p.MemberId == memberId && p.BenefitId == benefitId)==null)
             {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return 0.00;
             }
             else
             {
