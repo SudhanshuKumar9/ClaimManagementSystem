@@ -9,7 +9,7 @@ namespace ClaimsMicroservice.Repository
     public interface IClaimRepository
     {
         public string GetClaimStatus(int claimID, int policyID);
-        public Task<string> submitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefits);
+        public Task<string> SubmitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefits);
         
     }
 }

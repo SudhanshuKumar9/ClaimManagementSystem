@@ -23,7 +23,7 @@ namespace ClaimsMicroservice.Controllers
 
 
         [HttpGet]
-        [Route("GetClaimStatus")]
+        [Route("getClaimStatus")]
         public async Task<ActionResult<string>> GetClaimStatus([FromQuery] int claimID, [FromQuery] int policyID)
         {
             _log4net.Info("GetClaimStatus Method Called");
@@ -31,11 +31,11 @@ namespace ClaimsMicroservice.Controllers
         }
 
         [HttpPost]
-        [Route("SubmitClaim")]
+        [Route("submitClaim")]
         public async Task<ActionResult<string>> SubmitClaim([FromQuery] int policyID, [FromQuery] int memberID, [FromQuery] int benefitID, [FromQuery] int hospitalID, [FromQuery] double claimAmt, [FromQuery] string benefit)
         {
             _log4net.Info("SubmitClaim Method Called");
-            return Ok(_claimRepository.submitClaim(policyID, memberID, benefitID, hospitalID, claimAmt, benefit).Result);
+            return Ok(_claimRepository.SubmitClaim(policyID, memberID, benefitID, hospitalID, claimAmt, benefit).Result);
         }
     }
 }

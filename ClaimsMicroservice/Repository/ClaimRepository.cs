@@ -22,22 +22,41 @@ namespace ClaimsMicroservice.Repository
             return filterClaim;
         }
 
-        public async Task<string> submitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefit)
+        public async Task<string> SubmitClaim(int policyID, int memberID, int benefitID, int hospitalID, double claimAmt, string benefit)
         {
-            string status="";
-            ProviderPolicy providerPolicy = new ProviderPolicy();
+            string status = "Invalid details";
+            double claimAmount = ClaimAmountFetch(policyID, memberID, benefitID);
+            string benefitFetched = BenefitFetch(policyID, memberID);
+            if ((claimAmount >= claimAmt) && (benefitFetched.Equals(benefit)) && IsHospital(policyID, hospitalID).Result)
+            {
+                status = "Pending Action";
+                Claim claims = new Claim()
+                {
+                    ClaimID = ClaimData.claims.Count() + 1,
+                    ClaimStatus = status,
+                    PolicyID = policyID,
+                    AmountClaimed = claimAmt,
+                    BenefitsAvailed = benefit,
+                    HospitalID = hospitalID,
+                    Remarks = "Verified",
+                    Settled = "False"
+                };
+                ClaimData.claims.Add(claims);
+            }
+            else
+            {
+                status = "Claim Rejected";
+            }
+            return status;
+        }
+        public async Task<Boolean> IsHospital(int policyID, int hospitalID)
+        {
             HttpClientHandler clientHandler = new HttpClientHandler();
             clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
             using (HttpClient client = new HttpClient(clientHandler))
             {
                 client.BaseAddress = new Uri("https://localhost:44373/api/");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                HttpResponseMessage response1 = new HttpResponseMessage();
-                response1 = client.GetAsync("Policy/GetEligibleClaimAmount?PolicyID=" + policyID + "&MemberID=" + memberID + "&BenefitID=" + benefitID).Result;
-                double claimAmount = Convert.ToDouble(response1.Content.ReadAsStringAsync().Result);
-                HttpResponseMessage response2 = new HttpResponseMessage();
-                response2 = client.GetAsync("Policy/GetEligibleBenefits?PolicyID=" + policyID + "&MemberID=" + memberID).Result;
-                string Benefit = response2.Content.ReadAsStringAsync().Result;
                 HttpResponseMessage response3 = new HttpResponseMessage();
                 response3 = client.GetAsync("Policy/GetChainOfProviders/" + policyID).Result;
                 List<ProviderPolicy> providers = new List<ProviderPolicy>();
@@ -52,29 +71,36 @@ namespace ClaimsMicroservice.Repository
                         flag = true;
                     }
                 }
-
-                if ((claimAmount >= claimAmt) && (Benefit.Equals(benefit)) && (flag==true))
-                {
-                    status = "Pending Action";
-                    Claim claims = new Claim()
-                    {
-                        ClaimID = ClaimData.claims.Count() + 1,
-                        ClaimStatus = status,
-                        PolicyID = policyID,
-                        AmountClaimed = claimAmt,
-                        BenefitsAvailed = benefit,
-                        HospitalID = hospitalID,
-                        Remarks = "Verified",
-                        Settled = "False"
-                    };
-                    ClaimData.claims.Add(claims);
-                }
-                else
-                {
-                    status = "Claim Rejected";
-                }
+                return flag;
             }
-            return status;
+        }
+        public double ClaimAmountFetch(int policyID, int memberID, int benefitID)
+        {
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            using (HttpClient client = new HttpClient(clientHandler))
+            {
+                client.BaseAddress = new Uri("https://localhost:44373/api/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response1 = new HttpResponseMessage();
+                response1 = client.GetAsync("Policy/GetEligibleClaimAmount?PolicyID=" + policyID + "&MemberID=" + memberID + "&BenefitID=" + benefitID).Result;
+                double claimAmount = Convert.ToDouble(response1.Content.ReadAsStringAsync().Result);
+                return claimAmount;
+            }
+        }
+        public string BenefitFetch(int policyID, int memberID)
+        {
+            HttpClientHandler clientHandler = new HttpClientHandler();
+            clientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            using (HttpClient client = new HttpClient(clientHandler))
+            {
+                client.BaseAddress = new Uri("https://localhost:44373/api/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response2 = new HttpResponseMessage();
+                response2 = client.GetAsync("Policy/GetEligibleBenefits?PolicyID=" + policyID + "&MemberID=" + memberID).Result;
+                string benefit = response2.Content.ReadAsStringAsync().Result;
+                return benefit;
+            }
         }
     }
 }
