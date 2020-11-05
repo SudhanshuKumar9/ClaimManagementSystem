@@ -64,9 +64,9 @@ namespace ClaimsMicroservice.Repository
                 string apiResponse = await response3.Content.ReadAsStringAsync();
                 var data = JsonConvert.DeserializeObject<List<ProviderPolicy>>(apiResponse);
                 Boolean flag = false;
-                foreach (var x in data)
+                foreach (var row in data)
                 {
-                    if (x.HospitalID == hospitalID)
+                    if (row.HospitalID == hospitalID)
                     {
                         flag = true;
                     }

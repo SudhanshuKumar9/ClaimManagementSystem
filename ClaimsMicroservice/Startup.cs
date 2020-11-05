@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ClaimsMicroservice
 {
@@ -28,6 +30,10 @@ namespace ClaimsMicroservice
         {
             services.AddControllers();
             services.AddScoped<IClaimRepository, ClaimRepository>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "Claim Service", Version = "1.0" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +44,12 @@ namespace ClaimsMicroservice
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Claims Service (V 1.0)");
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

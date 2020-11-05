@@ -63,8 +63,6 @@ C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\b
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csprojAssemblyReference.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.AssemblyInfoInputs.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.AssemblyInfo.cs
-C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csproj.CoreCompileInputs.cache
-C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.RazorTargetAssemblyInfo.cache
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csproj.CopyComplete
 C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\staticwebassets\ClaimsMicroservice.StaticWebAssets.Manifest.cache
@@ -109,3 +107,10 @@ E:\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\staticw
 E:\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.dll
 E:\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.pdb
 E:\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.genruntimeconfig.cache
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.csproj.CoreCompileInputs.cache
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice\obj\Debug\netcoreapp3.1\ClaimsMicroservice.MvcApplicationPartsAssemblyInfo.cache

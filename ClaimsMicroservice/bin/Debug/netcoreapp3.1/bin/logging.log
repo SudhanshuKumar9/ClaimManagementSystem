@@ -1286,3 +1286,44 @@ INFO  12:12:24 Content root path: E:\MFPE\ClaimManagementSystem\ClaimsMicroservi
 INFO  12:12:25 SubmitClaim Method Called
 INFO  12:12:32 SubmitClaim Method Called
 INFO  12:14:01 SubmitClaim Method Called
+INFO  12:40:10 Application started. Press Ctrl+C to shut down.
+INFO  12:40:10 Application started. Press Ctrl+C to shut down.
+INFO  12:40:10 Hosting environment: Development
+INFO  12:40:10 Hosting environment: Development
+INFO  12:40:10 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:40:10 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:40:46 GetClaimStatus Method Called
+INFO  12:54:32 Application started. Press Ctrl+C to shut down.
+INFO  12:54:32 Application started. Press Ctrl+C to shut down.
+INFO  12:54:32 Hosting environment: Development
+INFO  12:54:32 Hosting environment: Development
+INFO  12:54:32 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:54:32 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  12:55:33 GetClaimStatus Method Called
+INFO  01:09:28 Application started. Press Ctrl+C to shut down.
+INFO  01:09:28 Application started. Press Ctrl+C to shut down.
+INFO  01:09:28 Hosting environment: Development
+INFO  01:09:28 Hosting environment: Development
+INFO  01:09:28 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:09:28 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:10:11 SubmitClaim Method Called
+ERROR 01:10:15 Exception in SubmitClaimOne or more errors occurred. (One or more errors occurred. (No connection could be made because the target machine actively refused it.))
+INFO  01:19:41 Application started. Press Ctrl+C to shut down.
+INFO  01:19:41 Application started. Press Ctrl+C to shut down.
+INFO  01:19:41 Hosting environment: Development
+INFO  01:19:41 Hosting environment: Development
+INFO  01:19:41 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:19:41 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:19:50 SubmitClaim Method Called
+ERROR 01:20:07 Exception in SubmitClaimOne or more errors occurred. (One or more errors occurred. (No connection could be made because the target machine actively refused it.))
+INFO  01:20:25 SubmitClaim Method Called
+ERROR 01:20:34 Exception in SubmitClaimOne or more errors occurred. (One or more errors occurred. (No connection could be made because the target machine actively refused it.))
+INFO  01:21:19 Application started. Press Ctrl+C to shut down.
+INFO  01:21:19 Application started. Press Ctrl+C to shut down.
+INFO  01:21:19 Hosting environment: Development
+INFO  01:21:19 Hosting environment: Development
+INFO  01:21:19 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:21:19 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\ClaimManagementSystem\ClaimsMicroservice
+INFO  01:21:47 SubmitClaim Method Called
+ERROR 01:21:51 Exception in SubmitClaimOne or more errors occurred. (One or more errors occurred. (No connection could be made because the target machine actively refused it.))
+INFO  01:24:05 SubmitClaim Method Called
