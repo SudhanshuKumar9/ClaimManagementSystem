@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4l4Qp8EELzsMhyI7GQ3KY8H1Hl+yp2hcaMLj325tGHlFL0S3FygAQFuN7Glqn4MRssu7kZOveEjGvT91/CprOg==",
+  "dgSpecHash": "4lwV5B4SlUbeNWOhF+pZrfZw8Y88PkRdVZMwfxZW17jeO2KnKszXcibVptxy9c5N/mfYQuF2qQzzUvCc0tUtag==",
   "success": true,
   "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\lenovo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

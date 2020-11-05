@@ -39,15 +39,15 @@ namespace MemberMicroservice.Controllers
         }
 
         [HttpGet]
-        [Route("GetClaimStatus")]
-        public async Task<ActionResult<string>> getClaimStatus([FromQuery] int claimID, [FromQuery] int policyID)
+        [Route("getClaimStatus")]
+        public async Task<ActionResult<string>> GetClaimStatus([FromQuery] int claimID, [FromQuery] int policyID)
         {
             return Ok(_memberRepository.GetClaimStatus(claimID, policyID));
         }
 
-        [HttpGet]
-        [Route("SubmitClaim")]
-        public async Task<ActionResult<string>> submitClaim([FromQuery] int policyID, [FromQuery] int memberID, [FromQuery] int benefitID, [FromQuery] int hospitalID, [FromQuery] double claimAmt, [FromQuery] string benefit)
+        [HttpPost]
+        [Route("submitClaim")]
+        public async Task<ActionResult<string>> SubmitClaim([FromQuery] int policyID, [FromQuery] int memberID, [FromQuery] int benefitID, [FromQuery] int hospitalID, [FromQuery] double claimAmt, [FromQuery] string benefit)
         {
             return Ok(_memberRepository.SubmitClaim(policyID, memberID, benefitID, hospitalID, claimAmt, benefit));
         }

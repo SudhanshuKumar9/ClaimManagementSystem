@@ -1,10 +1,12 @@
 ﻿using MemberMicroservice.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace MemberMicroservice.Repository
@@ -46,7 +48,8 @@ namespace MemberMicroservice.Repository
                 client.BaseAddress = new Uri("https://localhost:44387/api/");
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = new HttpResponseMessage();
-                response = client.GetAsync("Claims/SubmitClaim?policyID=" + policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit).Result;
+                StringContent content = new StringContent(JsonConvert.SerializeObject(null), Encoding.UTF8, "application/json");
+                response = client.PostAsync("Claims/SubmitClaim?policyID=" + policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit, content).Result;
                 string claimStatus = response.Content.ReadAsStringAsync().Result;
                 return claimStatus;
             }
