@@ -17,7 +17,7 @@ namespace ClaimsMicroservice
                 PolicyID = 1,
                 AmountClaimed = 12300,
                 BenefitsAvailed = "Medicine & Checkup",
-                HospitalID = "Amravati Hospital",
+                HospitalID = 1,
                 Remarks = "Verified",
                 Settled = "False"
             },
@@ -28,7 +28,7 @@ namespace ClaimsMicroservice
                 PolicyID = 1,
                 AmountClaimed = 12300,
                 BenefitsAvailed = "Medicine & Checkup",
-                HospitalID = "Amravati Hospital",
+                HospitalID = 1,
                 Remarks = "Verified",
                 Settled = "False"
             },
@@ -39,7 +39,7 @@ namespace ClaimsMicroservice
                 PolicyID = 3,
                 AmountClaimed = 12300,
                 BenefitsAvailed = "Medicine & Checkup",
-                HospitalID = "Amravati Hospital",
+                HospitalID = 1,
                 Remarks = "Verified",
                 Settled = "False"
             }

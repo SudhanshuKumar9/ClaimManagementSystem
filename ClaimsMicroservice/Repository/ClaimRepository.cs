@@ -41,11 +41,9 @@ namespace ClaimsMicroservice.Repository
                 HttpResponseMessage response3 = new HttpResponseMessage();
                 response3 = client.GetAsync("Policy/GetChainOfProviders/" + policyID).Result;
                 List<ProviderPolicy> providers = new List<ProviderPolicy>();
-                List<int> HospitalID = new List<int>();
                 var contentType = new MediaTypeWithQualityHeaderValue("application/json");
                 string apiResponse = await response3.Content.ReadAsStringAsync();
                 var data = JsonConvert.DeserializeObject<List<ProviderPolicy>>(apiResponse);
-
                 Boolean flag = false;
                 foreach (var x in data)
                 {
@@ -58,6 +56,18 @@ namespace ClaimsMicroservice.Repository
                 if ((claimAmount >= claimAmt) && (Benefit.Equals(benefit)) && (flag==true))
                 {
                     status = "Pending Action";
+                    Claim claims = new Claim()
+                    {
+                        ClaimID = ClaimData.claims.Count() + 1,
+                        ClaimStatus = status,
+                        PolicyID = policyID,
+                        AmountClaimed = claimAmt,
+                        BenefitsAvailed = benefit,
+                        HospitalID = hospitalID,
+                        Remarks = "Verified",
+                        Settled = "False"
+                    };
+                    ClaimData.claims.Add(claims);
                 }
                 else
                 {

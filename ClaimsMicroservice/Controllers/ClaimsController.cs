@@ -30,7 +30,7 @@ namespace ClaimsMicroservice.Controllers
             return Ok(_claimRepository.GetClaimStatus(claimID, policyID));
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("SubmitClaim")]
         public async Task<ActionResult<string>> SubmitClaim([FromQuery] int policyID, [FromQuery] int memberID, [FromQuery] int benefitID, [FromQuery] int hospitalID, [FromQuery] double claimAmt, [FromQuery] string benefit)
         {

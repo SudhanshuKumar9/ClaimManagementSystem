@@ -11,9 +11,9 @@ namespace ClaimsMicroservice.Models
         public string ClaimStatus { get; set; }
         public string Remarks { get; set; }
         public int PolicyID { get; set; }
-        public string HospitalID { get; set; }
+        public int HospitalID { get; set; }
         public string BenefitsAvailed { get; set; }
-        public Decimal AmountClaimed { get; set; }
+        public double AmountClaimed { get; set; }
         public string Settled { get; set; }
 
     }
