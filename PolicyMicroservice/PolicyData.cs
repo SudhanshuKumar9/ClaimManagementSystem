@@ -11,7 +11,8 @@ namespace PolicyMicroservice
         public static List<Policy> policyList = new List<Policy>
         {
             new Policy{PolicyId=1,PolicyNo=101,Premium=50000.00,Tenure=3,BenefitId=1},
-            new Policy{PolicyId=2,PolicyNo=102,Premium=20000.00,Tenure=5,BenefitId=1}
+            new Policy{PolicyId=2,PolicyNo=102,Premium=20000.00,Tenure=5,BenefitId=1},
+            new Policy{PolicyId=3,PolicyNo=103,Premium=20000.00,Tenure=5,BenefitId=1}
             
         };
         public static List<MemberPolicy> memberpolicyList = new List<MemberPolicy>
