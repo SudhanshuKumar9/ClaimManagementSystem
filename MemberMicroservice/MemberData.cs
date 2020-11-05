@@ -12,7 +12,7 @@ namespace MemberMicroservice
         {
             new Member()
             {
-                MemberID = 101,
+                MemberID = 1,
                 MemberName = "John",
                 MemberAddress1 = "412 Street",
                 MemberAddress2 = "Victorious",
@@ -23,7 +23,7 @@ namespace MemberMicroservice
             },
             new Member()
             {
-                MemberID = 102,
+                MemberID = 2,
                 MemberName = "Jack",
                 MemberAddress1 = "4432 main Street",
                 MemberAddress2 = "George",
@@ -38,8 +38,8 @@ namespace MemberMicroservice
         {
             new MemberPremium()
             {
-                MemberID = 101,
-                PolicyID = 12345,
+                MemberID = 1,
+                PolicyID = 1,
                 PremiumDue = 43242.0,
                 PaymentDetails = "UPI Mode",
                 DueDate = new DateTime(2020, 12, 20),
@@ -47,8 +47,8 @@ namespace MemberMicroservice
             },
             new MemberPremium()
             {
-                MemberID = 102,
-                PolicyID = 54321,
+                MemberID = 2,
+                PolicyID = 2,
                 PremiumDue = 54342.0,
                 PaymentDetails = "Cheque Mode",
                 DueDate = new DateTime(2021, 04, 16),
