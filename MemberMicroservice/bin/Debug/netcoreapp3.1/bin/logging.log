@@ -1,0 +1,73 @@
+INFO  12:53:08 Application started. Press Ctrl+C to shut down.
+INFO  12:53:09 Application started. Press Ctrl+C to shut down.
+INFO  12:53:09 Hosting environment: Development
+INFO  12:53:09 Hosting environment: Development
+INFO  12:53:09 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:53:09 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:53:36 ViewBills Accesed
+INFO  12:53:55 ViewBills Accesed
+INFO  12:54:27 Application started. Press Ctrl+C to shut down.
+INFO  12:54:27 Application started. Press Ctrl+C to shut down.
+INFO  12:54:27 Hosting environment: Development
+INFO  12:54:27 Hosting environment: Development
+INFO  12:54:27 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:54:27 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:54:28 ViewBills Accesed
+INFO  12:55:45 Application started. Press Ctrl+C to shut down.
+INFO  12:55:45 Application started. Press Ctrl+C to shut down.
+INFO  12:55:45 Hosting environment: Development
+INFO  12:55:45 Hosting environment: Development
+INFO  12:55:45 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:55:45 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  12:55:45 ViewBills Accesed
+INFO  12:55:54 ViewBills Accesed
+INFO  01:04:10 Application started. Press Ctrl+C to shut down.
+INFO  01:04:10 Application started. Press Ctrl+C to shut down.
+INFO  01:04:10 Hosting environment: Development
+INFO  01:04:10 Hosting environment: Development
+INFO  01:04:10 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  01:04:10 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+ERROR 01:04:10 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:04:10 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:04:13 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:04:13 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:04:36 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 01:04:36 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Swagger.ISwaggerProvider' while attempting to Invoke middleware 'Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware'.
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  01:06:06 Application started. Press Ctrl+C to shut down.
+INFO  01:06:06 Application started. Press Ctrl+C to shut down.
+INFO  01:06:06 Hosting environment: Development
+INFO  01:06:06 Hosting environment: Development
+INFO  01:06:06 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  01:06:06 Content root path: E:\MFPE\ClaimManagementSystem\MemberMicroservice
+INFO  01:06:35 ViewBills Accesed
+INFO  01:06:47 ViewBills Accesed

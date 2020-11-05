@@ -31,6 +31,17 @@ namespace MemberMicroservice
                 MemberPhone = 0432345242,
                 Username = "jack432",
                 Password = "mypass@123"
+            },
+                        new Member()
+            {
+                MemberID = 3,
+                MemberName = "Rahul",
+                MemberAddress1 = "4432 global Street",
+                MemberAddress2 = "Georgia",
+                MemberCity = "UK",
+                MemberPhone = 0412345242,
+                Username = "RAH2345",
+                Password = "rahulpass@123"
             }
 
         };
@@ -48,11 +59,20 @@ namespace MemberMicroservice
             new MemberPremium()
             {
                 MemberID = 2,
-                PolicyID = 2,
+                PolicyID = 1,
                 PremiumDue = 54342.0,
                 PaymentDetails = "Cheque Mode",
                 DueDate = new DateTime(2021, 04, 16),
                 LastPremiumPaidDate = new DateTime(2020, 04, 22)
+            },
+            new MemberPremium()
+            {
+                MemberID = 3,
+                PolicyID = 2,
+                PremiumDue = 54342.0,
+                PaymentDetails = "Cheque Mode",
+                DueDate = new DateTime(2021, 07, 16),
+                LastPremiumPaidDate = new DateTime(2020, 09, 22)
             }
 
         };

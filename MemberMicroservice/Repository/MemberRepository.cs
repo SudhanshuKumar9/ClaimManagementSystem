@@ -49,7 +49,7 @@ namespace MemberMicroservice.Repository
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 HttpResponseMessage response = new HttpResponseMessage();
                 StringContent content = new StringContent(JsonConvert.SerializeObject(null), Encoding.UTF8, "application/json");
-                response = client.PostAsync("Claims/SubmitClaim?policyID=" + policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit, content).Result;
+                response = client.PostAsync("Claims/submitClaim?policyID=" + policyID+"&memberID="+memberID+"&benefitID="+benefitID+"&hospitalID="+hospitalID+"&claimAmt="+claimAmt+"&benefit="+benefit, content).Result;
                 string claimStatus = response.Content.ReadAsStringAsync().Result;
                 return claimStatus;
             }
