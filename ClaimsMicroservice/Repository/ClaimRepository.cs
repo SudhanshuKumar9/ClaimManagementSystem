@@ -38,7 +38,7 @@ namespace ClaimsMicroservice.Repository
             string status = "";
             double claimAmount = ClaimAmountFetch(policyID, memberID, benefitID);
             string benefitFetched = BenefitFetch(policyID, memberID);
-            if(benefitFetched.Equals("Invalid")||claimAmount == -1)
+            if(benefitFetched.Equals("Invalid Data")||claimAmount == -1)
             {
                 return status = "Provide valid details";
             }
