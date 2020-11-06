@@ -34,6 +34,7 @@ namespace MemberPortal
                 options.IdleTimeout = TimeSpan.FromSeconds(120);//You can set Time   
             });
             services.AddDbContext<MockDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("PortalData")));
+            
             services.AddControllersWithViews();
             
         }

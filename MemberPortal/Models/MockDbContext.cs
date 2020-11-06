@@ -11,5 +11,7 @@ namespace MemberPortal.Models
        public MockDbContext(DbContextOptions<MockDbContext> options) : base(options) { }
 
        public DbSet<MockDatabase> MockDatabases { get; set; }
+
+       
     }
 }

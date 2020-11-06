@@ -31,11 +31,10 @@ namespace MemberPortal.Controllers
             {
                 using (var client = new HttpClient())
                 {
-                    //var contentType = new MediaTypeWithQualityHeaderValue("application/json");
-                    //client.DefaultRequestHeaders.Accept.Add(contentType);
-                    //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",token);
-                    client.DefaultRequestHeaders.Clear();
-                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
+                    var contentType = new MediaTypeWithQualityHeaderValue("application/json");
+                    client.DefaultRequestHeaders.Accept.Add(contentType);
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                    HttpContext.Session.SetString("Username", memberDetail.Username);
 
                 }
 
