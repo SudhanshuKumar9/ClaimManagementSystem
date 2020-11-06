@@ -17,13 +17,13 @@ namespace MemberMicroservice.Repository
     {
         public MemberPremium ViewBill(int policyID, int memberID)
         {
-                MemberPremium member = (from p in MemberData.premiumDetails where (p.MemberID == memberID && p.PolicyID == policyID) select p).FirstOrDefault();
-                return member;
+            MemberPremium member = (from p in MemberData.premiumDetails where (p.MemberID == memberID && p.PolicyID == policyID) select p).FirstOrDefault();
+            return member;
         }
 
         public Member GetMember(LoginModel model)
-        {   
-                return MemberData.members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault();   
+        {
+            return MemberData.members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault();
         }
 
         public string GetClaimStatus(int claimID, int policyID)
