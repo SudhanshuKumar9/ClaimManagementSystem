@@ -44,19 +44,11 @@ namespace Authorization.Controllers
 
             try
             {
-                _log4net.Info(nameof(Login) + " meyhod invoked");
-                Member memberDetail;
-                var jsonData = JsonConvert.SerializeObject(model);
-                var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
-                using (var client = new HttpClient())
-                {
-                    var response = client.PostAsync("https://localhost:44355/api/Members/", encodedData);
-                    var responseData = response.Result.Content.ReadAsStringAsync();
-                    memberDetail = JsonConvert.DeserializeObject<Member>(responseData.Result);
-                }
+                _log4net.Info(nameof(Login) + " method invoked");
+                Member memberDetail=CheckCredential(model);
                 if (memberDetail != null)
                 {
-                    var tokenString = _repository.GenerateJSONWebToken(memberDetail);
+                    var tokenString = _repository.GenerateJSONWebToken(_config,memberDetail);
                     return Ok(tokenString);
                 }
 
@@ -67,29 +59,27 @@ namespace Authorization.Controllers
                 _log4net.Error("Error Occured from " + nameof(Login) + "Error Message : " + e.Message);
                 return BadRequest(e.Message);
             }
+
+
+
         }
 
+        private Member CheckCredential(LoginModel model)
+        {
+            Member memberDetail;
+            var jsonData = JsonConvert.SerializeObject(model);
+            var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            using (var client = new HttpClient())
+            {
+                var response = client.PostAsync("https://localhost:44355/api/Members/", encodedData);
+                var responseData = response.Result.Content.ReadAsStringAsync();
+                memberDetail = JsonConvert.DeserializeObject<Member>(responseData.Result);
+            }
 
+            return memberDetail;
 
+        }
 
-        // this function will generate jwt token
-        //private string GenerateJSONWebToken(Member memberDetail)
-        //{
-        //    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-        //    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-        //    List<Claim> claims = new List<Claim>() {
-        //        new Claim(JwtRegisteredClaimNames.Sub, memberDetail.Username),
-        //        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-        //    };
-        //    var token = new JwtSecurityToken(
-        //      _config["Jwt:Issuer"],
-        //      _config["Jwt:Issuer"],
-        //      claims,
-        //      expires: DateTime.Now.AddMinutes(120),
-        //      signingCredentials: credentials);
-        //    return new JwtSecurityTokenHandler().WriteToken(token);
-        //}
     }
 }
 

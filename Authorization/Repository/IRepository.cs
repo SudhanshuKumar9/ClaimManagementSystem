@@ -1,4 +1,5 @@
 ﻿using Authorization.Models;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,9 @@ namespace Authorization.Repository
 {
     public interface IRepository
     {
-        string GenerateJSONWebToken(Member memberDetail);
+        
+      
+
+       public string GenerateJSONWebToken(IConfiguration _congig,Member memberDetail);
     }
 }
