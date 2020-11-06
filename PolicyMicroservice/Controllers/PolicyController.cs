@@ -37,21 +37,23 @@ namespace PolicyMicroservice.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+               
+                if (policyId>0)
                 {
-                    _log4net.Info("GetChainOfProviders Accesed");
                     var providerlist = _policyRepository.GetChainOfProviders(policyId);
+                    _log4net.Info("GetChainOfProviders Accesed for policyId :"+policyId);
+                    
 
                     return new OkObjectResult(providerlist);
                 }
                 else
-                    _log4net.Info("Model is not valid in GetChainOfProviders");
+                    _log4net.Info("Data is not valid in GetChainOfProviders while checking for PolicyId: "+policyId);
                     return BadRequest();
 
             }
             catch(Exception e)
             {
-               _log4net.Error("Exception in GetChainOfProviders"+e.Message);
+               _log4net.Error("Exception in GetChainOfProviders for entered PolicyId: "+policyId+" "+e.Message);
                 return new NoContentResult();
             }
         }
@@ -70,22 +72,22 @@ namespace PolicyMicroservice.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                if (policyId>0 && memberId>0)
                 {
-                    _log4net.Info("GetEligibleBenefit is accessed");
+                    _log4net.Info("GetEligibleBenefit is accessed for MemberId :"+memberId +" PolicyId :"+policyId);
                     var benefitslist = _policyRepository.GetEligibleBenefits(policyId, memberId);
                     return new OkObjectResult(benefitslist);
                 }
                 else
                 {
-                    _log4net.Info("Model is not valid in GetEligibleBenefit");
-                    return BadRequest();
+                    _log4net.Info("Data is not valid in GetEligibleBenefit for the entered MemberId :"+memberId+" PolicyId :"+policyId );
+                    return BadRequest() ;
                 }
 
             }
             catch(Exception e)
             {
-                 _log4net.Error("Exception in GetEligibleBenefit"+e.Message);
+                 _log4net.Error("Exception in GetEligibleBenefit for the entered MemberId :" + memberId + " PolicyId :" + policyId +" " +e.Message);
                 return new NoContentResult();
             }
         }
@@ -105,20 +107,20 @@ namespace PolicyMicroservice.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                if (policyId>0 && memberId>0 && benefitId>0)
                 {
-                    _log4net.Info("GetEligibleClaimAmount is accesed");
+                    _log4net.Info("GetEligibleClaimAmount is accesed for PolicyId :"+policyId+" MemberId :"+memberId+" BenefitId :"+benefitId);
                     var amt = _policyRepository.GetEligibleClaimAmount(policyId, memberId, benefitId);
                     return new OkObjectResult(amt);
                 }
                 else
-                    _log4net.Info("ModelState is not valid for GetEligibleAmount");
+                    _log4net.Info("Data is not valid for GetEligibleClaimAmount for the entered PolicyId :" + policyId + " MemberId :" + memberId + " BenefitId :" + benefitId);
                     return BadRequest();
 
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception in GetEligibleClaimAmount"+e.Message);
+                _log4net.Error("Exception in GetEligibleClaimAmount for entered PolicyId :" + policyId + " MemberId :" + memberId + " BenefitId :" + benefitId+" " +e.Message);
                 return new NoContentResult();
 
             }
