@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {}
+    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {
+    "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\Authorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
+        "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
         "projectName": "Authorization",
-        "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
+        "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
         "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\obj\\",
+        "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

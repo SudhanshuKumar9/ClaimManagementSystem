@@ -365,3 +365,9 @@ INFO  12:06:50 GetEligibleBenefit is accessed
 INFO  12:07:14 GetEligibleClaimAmount is accesed
 INFO  12:07:14 GetEligibleBenefit is accessed
 INFO  12:07:14 GetChainOfProviders Accesed
+INFO  03:45:40 Application started. Press Ctrl+C to shut down.
+INFO  03:45:40 Application started. Press Ctrl+C to shut down.
+INFO  03:45:40 Hosting environment: Development
+INFO  03:45:40 Hosting environment: Development
+INFO  03:45:40 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\New folder\ClaimManagementSystem\PolicyMicroservice
+INFO  03:45:40 Content root path: C:\Users\Abhishek Tiwari\Desktop\MFPE\New folder\ClaimManagementSystem\PolicyMicroservice

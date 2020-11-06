@@ -8706,11 +8706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
+      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
       "projectName": "MemberPortal",
-      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
+      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\MemberPortal\\MemberPortal.csproj",
       "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\MemberPortal\\obj\\",
+      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\MemberPortal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

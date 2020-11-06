@@ -17,27 +17,13 @@ namespace MemberMicroservice.Repository
     {
         public MemberPremium ViewBill(int policyID, int memberID)
         {
-            if ((from p in MemberData.premiumDetails where (p.MemberID == memberID && p.PolicyID == policyID) select p).FirstOrDefault() == null)
-            {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            else
-            {
                 MemberPremium member = (from p in MemberData.premiumDetails where (p.MemberID == memberID && p.PolicyID == policyID) select p).FirstOrDefault();
                 return member;
-            }
         }
 
         public Member GetMember(LoginModel model)
-        {
-            if (MemberData.members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault() == null)
-            {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            else
-            {
-                return MemberData.members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault();
-            }
+        {   
+                return MemberData.members.Where(m => m.Username == model.Username && m.Password == model.Password).FirstOrDefault();   
         }
 
         public string GetClaimStatus(int claimID, int policyID)

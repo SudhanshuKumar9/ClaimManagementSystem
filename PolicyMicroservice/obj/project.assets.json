@@ -6200,11 +6200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\PolicyMicroservice\\PolicyMicroservice.csproj",
+      "projectUniqueName": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\PolicyMicroservice\\PolicyMicroservice.csproj",
       "projectName": "PolicyMicroservice",
-      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\PolicyMicroservice\\PolicyMicroservice.csproj",
+      "projectPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\PolicyMicroservice\\PolicyMicroservice.csproj",
       "packagesPath": "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\PolicyMicroservice\\obj\\",
+      "outputPath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\PolicyMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

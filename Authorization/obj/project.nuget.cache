@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n3miAT91KC7ECm3KjDBietaR+HhYUID1f2bessgqsJqkZ5CPn4hq69zxjDvEX1QsdlGrtg0vUagTfbt23bb+YA==",
+  "dgSpecHash": "FeXiyt2+N2Nk+CojYYGMZFXMLTTvScu/snCbfIRHZ/rHtnCO22Z+kqQ1wq/ZVDcby7ljGOpu85RkkEUacTdRMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
+  "projectFilePath": "C:\\Users\\Abhishek Tiwari\\Desktop\\MFPE\\New folder\\ClaimManagementSystem\\Authorization\\Authorization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",
     "C:\\Users\\Abhishek Tiwari\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.9\\microsoft.aspnetcore.authentication.jwtbearer.3.1.9.nupkg.sha512",
