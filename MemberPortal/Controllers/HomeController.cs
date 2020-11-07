@@ -25,7 +25,8 @@ namespace MemberPortal.Controllers
         private static int count = 1;
         private static MockDatabase _data=new MockDatabase();
         private readonly MockDbContext _context;
-       
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(HomeController));
+
         public HomeController(MockDbContext context)
         {
             _context = context;
@@ -35,7 +36,9 @@ namespace MemberPortal.Controllers
         {
             if(CheckStatus())
             {
+                _log4net.Info(nameof(Index)+" method invoked.");
                 ViewBag.UserName = HttpContext.Session.GetString("Username");
+                _log4net.Info(ViewBag.UserName + " logged in.");
                 return View();
             }
                 
@@ -58,6 +61,7 @@ namespace MemberPortal.Controllers
                 {
                     if (_data.PolicyID != 0)
                     {
+                        _log4net.Info(nameof(ViewBill) + " method invoked!");
                         using (var client = new HttpClient())
                         {
                             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -78,6 +82,7 @@ namespace MemberPortal.Controllers
                 {
                     ErrorMessage = e.Message
                 };
+                _log4net.Error("Error Ocuured in " + nameof(ViewBill) + " Error message : " + e.Message);
                 return View("Error", error);
             }
             
@@ -89,6 +94,7 @@ namespace MemberPortal.Controllers
         {
             if (CheckStatus())
             {
+                _log4net.Info(nameof(SubmitClaim) + " method invked.");
                 return View();
             }
             return RedirectToAction("Index", "Login");
@@ -100,6 +106,7 @@ namespace MemberPortal.Controllers
         {
             if(CheckStatus())
             {
+                _log4net.Info(nameof(ClaimStatus) + " method invked.");
                 return View();
             }
             return RedirectToAction("Index", "Login");
@@ -111,6 +118,7 @@ namespace MemberPortal.Controllers
         {
             try
             {
+                _log4net.Info(nameof(SubmitStatus) + " mehod invoked with Memeber Id " + data.MemberID);
                 using (var client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -127,6 +135,7 @@ namespace MemberPortal.Controllers
                 {
                     ErrorMessage = e.Message
                 };
+                _log4net.Error("Error Ocuured in " + nameof(SubmitStatus) + " Error message : " + e.Message);
                 return View("Error", error);
             }
                
@@ -149,7 +158,7 @@ namespace MemberPortal.Controllers
                 _context.SaveChanges();
 
 
-
+                _log4net.Info(nameof(SaveClaim) + " method invoked.");
                 using (var client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -168,6 +177,7 @@ namespace MemberPortal.Controllers
                 {
                     ErrorMessage = e.Message
                 };
+                _log4net.Error("Error Ocuured in " + nameof(SaveClaim) + " Error message : " + e.Message);
                 return View("Error", error);
             }
            
@@ -176,6 +186,7 @@ namespace MemberPortal.Controllers
 
         public IActionResult Logout()
         {
+            _log4net.Info(nameof(Logout) + " method invoked. " + ViewBag.UserName + " logged out.");
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Login");
         }

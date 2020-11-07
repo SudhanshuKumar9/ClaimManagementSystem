@@ -641,7 +641,6 @@ C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\MemberPo
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\MemberPortal.pdb
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\MemberPortal.Views.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\MemberPortal.Views.pdb
-C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\log4net.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
@@ -666,7 +665,6 @@ C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsof
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
@@ -759,8 +757,6 @@ C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.csprojAssemblyReference.cache
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.AssemblyInfoInputs.cache
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.AssemblyInfo.cs
-C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.csproj.CoreCompileInputs.cache
-C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.RazorAssemblyInfo.cache
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.RazorAssemblyInfo.cs
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.TagHelpers.input.cache
@@ -788,3 +784,8 @@ C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\staticwe
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.dll
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.pdb
 C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.genruntimeconfig.cache
+C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\log4net.config
+C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.csproj.CoreCompileInputs.cache
+C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\obj\Debug\netcoreapp3.1\MemberPortal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\log4net.dll
+C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

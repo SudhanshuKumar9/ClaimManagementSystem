@@ -12,14 +12,18 @@ using System.Text;
 using System.Net;
 using System.Net.Http.Headers;
 using MemberPortal.Models;
+using Microsoft.CodeAnalysis.Operations;
 
 namespace MemberPortal.Controllers
 {
     public class LoginController : Controller
     {
         // GET: LoginController
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(HomeController));
+
         public ActionResult Index()
         {
+            _log4net.Info(nameof(Index) + " method invoked.");
             return View();
         }
 
@@ -28,6 +32,7 @@ namespace MemberPortal.Controllers
         {
             try
             {
+                _log4net.Info(nameof(Login) + " method invoked by the Username :" + memberDetail.Username);
                 string token = GetToken("https://localhost:44392/api/Auth/Login", memberDetail);
 
                 if (token != null)
@@ -50,10 +55,12 @@ namespace MemberPortal.Controllers
             }
             catch(Exception e)
             {
+
                 ErrorViewModel error = new ErrorViewModel
                 {
                     ErrorMessage = e.Message
                 };
+                _log4net.Info("Error occured in " + nameof(Login) + " Error message:  " + error.ErrorMessage);
                 return View("Error",error);
             }
            
@@ -65,6 +72,7 @@ namespace MemberPortal.Controllers
         {
             try
             {
+                _log4net.Info(nameof(GetToken) + " method invoked.");
                 var jsonData = JsonConvert.SerializeObject(user);
                 var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
@@ -79,6 +87,7 @@ namespace MemberPortal.Controllers
             }
             catch(Exception e)
             {
+                _log4net.Info("Error occured in " + nameof(Login) + " Error message:  " + e.Message);
                 throw e;
             }
            

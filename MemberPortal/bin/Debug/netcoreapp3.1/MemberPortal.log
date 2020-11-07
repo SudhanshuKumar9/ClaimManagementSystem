@@ -1,0 +1,38 @@
+FATAL 01:28:23 Application startup exception
+System.Exception: Could not resolve a service of type 'log4net.Repository.Hierarchy.ILoggerFactory' for the parameter 'loggerFactory' of method 'Configure' on type 'MemberPortal.Startup'.
+ ---> System.InvalidOperationException: No service for type 'log4net.Repository.Hierarchy.ILoggerFactory' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+INFO  01:52:41 Application started. Press Ctrl+C to shut down.
+INFO  01:52:41 Application started. Press Ctrl+C to shut down.
+INFO  01:52:41 Hosting environment: Development
+INFO  01:52:41 Hosting environment: Development
+INFO  01:52:41 Content root path: C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal
+INFO  01:52:41 Content root path: C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal
+INFO  02:12:25 Application started. Press Ctrl+C to shut down.
+INFO  02:12:25 Application started. Press Ctrl+C to shut down.
+INFO  02:12:25 Hosting environment: Development
+INFO  02:12:25 Hosting environment: Development
+INFO  02:12:25 Content root path: C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal
+INFO  02:12:25 Content root path: C:\Users\sud44\OneDrive\Desktop\UI\MemberPortal
+INFO  02:12:25 Index method invoked.
+INFO  02:13:18 Login method invoked by the Username :john@123
+INFO  02:13:18 GetToken method invoked.
+INFO  02:13:21 Index meytod invoked.
+INFO  02:13:21 john@123 logged in.
+INFO  02:13:29 SubmitClaim method invked.
+INFO  02:13:32 ClaimStatus method invked.
+INFO  02:13:34 ClaimStatus method invked.
+INFO  02:13:35 SubmitClaim method invked.
+INFO  02:13:36 Index meytod invoked.
+INFO  02:13:36 john@123 logged in.
+INFO  02:13:58 Logout method invoked.  logged out.
+INFO  02:13:58 Index method invoked.
