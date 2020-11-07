@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8QedM4bujY1afrnk7S0dddsrp6NOrm2elT8zFeA77baSOtaK2GnTyWbk3KeSmu27kj7TPZYKQOHh9XV7xxzwNw==",
+  "dgSpecHash": "737ZFmYGWpc76Fgqzglz2CoPtLm3tkPvfDLYOWJk4QG87WrWsReXasSBUXdrAQ8hLZPmaA0+UuZnr/zf+U9KrQ==",
   "success": true,
-  "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
+  "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

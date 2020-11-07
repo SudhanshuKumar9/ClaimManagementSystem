@@ -5547,11 +5547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
+      "projectUniqueName": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
       "projectName": "MemberMicroservice",
-      "projectPath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
+      "projectPath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\obj\\",
+      "outputPath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
