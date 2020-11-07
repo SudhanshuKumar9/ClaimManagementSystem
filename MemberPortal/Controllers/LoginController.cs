@@ -11,6 +11,7 @@ using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Net;
 using System.Net.Http.Headers;
+using MemberPortal.Models;
 
 namespace MemberPortal.Controllers
 {
@@ -25,42 +26,62 @@ namespace MemberPortal.Controllers
         [HttpPost]
         public IActionResult Login([FromForm]MemberLogin memberDetail)
         {
-            string token = GetToken("https://localhost:44392/api/Auth/Login", memberDetail);
-
-            if (token != null)
+            try
             {
-                using (var client = new HttpClient())
-                {
-                    var contentType = new MediaTypeWithQualityHeaderValue("application/json");
-                    client.DefaultRequestHeaders.Accept.Add(contentType);
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                    HttpContext.Session.SetString("Username", memberDetail.Username);
+                string token = GetToken("https://localhost:44392/api/Auth/Login", memberDetail);
 
+                if (token != null)
+                {
+                    using (var client = new HttpClient())
+                    {
+                        var contentType = new MediaTypeWithQualityHeaderValue("application/json");
+                        client.DefaultRequestHeaders.Accept.Add(contentType);
+                        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        HttpContext.Session.SetString("Username", memberDetail.Username);
+
+                    }
+
+                    return RedirectToAction("Index", "Home");
                 }
 
-                return RedirectToAction("Index", "Home");
+                ModelState.Clear();
+                ModelState.AddModelError(string.Empty, "Username or Password is Incorrect");
+                return View("Index");
             }
-
-            ModelState.Clear();
-            ModelState.AddModelError(string.Empty, "Username or Password is Incorrect");
-            return View("Index");
+            catch(Exception e)
+            {
+                ErrorViewModel error = new ErrorViewModel
+                {
+                    ErrorMessage = e.Message
+                };
+                return View("Error",error);
+            }
+           
         }
 
       
 
         public string GetToken(string url, MemberLogin user)
         {
-            var jsonData = JsonConvert.SerializeObject(user);
-            var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
-
-            using var client = new HttpClient();
-            var response = client.PostAsync(url, encodedData).Result;
-            if(response.StatusCode==HttpStatusCode.OK)
+            try
             {
-                string tokenString = response.Content.ReadAsStringAsync().Result;
-                return tokenString;
+                var jsonData = JsonConvert.SerializeObject(user);
+                var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                using var client = new HttpClient();
+                var response = client.PostAsync(url, encodedData).Result;
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    string tokenString = response.Content.ReadAsStringAsync().Result;
+                    return tokenString;
+                }
+                return null;
             }
-            return null;
+            catch(Exception e)
+            {
+                throw e;
+            }
+           
             
         }
 

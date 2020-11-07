@@ -52,23 +52,36 @@ namespace MemberPortal.Controllers
 
         public IActionResult ViewBill()
         {
-            if(CheckStatus())
+            try
             {
-                if (_data.PolicyID != 0)
+                if (CheckStatus())
                 {
-                    using (var client = new HttpClient())
+                    if (_data.PolicyID != 0)
                     {
-                        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                        HttpResponseMessage response = new HttpResponseMessage();
-                        response = client.GetAsync("https://localhost:44355/api/Members/viewBills?policyID=" + _data.PolicyID + "&memberID=" + _data.MemberID).Result;
-                        var data = JsonConvert.DeserializeObject<MemberPremium>(response.Content.ReadAsStringAsync().Result);
+                        using (var client = new HttpClient())
+                        {
+                            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            HttpResponseMessage response = new HttpResponseMessage();
+                            response = client.GetAsync("https://localhost:44355/api/Members/viewBills?policyID=" + _data.PolicyID + "&memberID=" + _data.MemberID).Result;
+                            var data = JsonConvert.DeserializeObject<MemberPremium>(response.Content.ReadAsStringAsync().Result);
 
-                        return View(data);
+                            return View(data);
+                        }
                     }
+                    return View();
                 }
-                return View();
+                return RedirectToAction("Index", "Login");
             }
-            return RedirectToAction("Index", "Login");
+            catch(Exception e)
+            {
+                ErrorViewModel error = new ErrorViewModel
+                {
+                    ErrorMessage = e.Message
+                };
+                return View("Error", error);
+            }
+            
+            
            
         }
 
@@ -96,7 +109,8 @@ namespace MemberPortal.Controllers
         [HttpPost]
         public IActionResult SubmitStatus([FromForm] MockDatabase data)
         {
-          
+            try
+            {
                 using (var client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
@@ -106,6 +120,16 @@ namespace MemberPortal.Controllers
                     ViewBag.Status = responseData;
                     return View("Status");
                 }
+            }
+            catch(Exception e)
+            {
+                ErrorViewModel error = new ErrorViewModel
+                {
+                    ErrorMessage = e.Message
+                };
+                return View("Error", error);
+            }
+               
         }
 
         [HttpPost]
@@ -139,9 +163,12 @@ namespace MemberPortal.Controllers
             }
             catch(Exception e)
             {
-                ModelState.Clear();
-                ModelState.AddModelError(string.Empty, "Some internal error occured : "+e.Message);
-                return View("SubmitClaim");
+
+                ErrorViewModel error = new ErrorViewModel
+                {
+                    ErrorMessage = e.Message
+                };
+                return View("Error", error);
             }
            
         }

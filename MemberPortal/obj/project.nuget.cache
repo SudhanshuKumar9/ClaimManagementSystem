@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BDGzLndAYO15/sI65givHr9PhZUJ/bFCzEX/7FK3b2jRyTDCbwOmnQ2iMi+Vy9AHgbiSxf0TbKmFvBP0yndoyA==",
+  "dgSpecHash": "X6cZ2zCx/miPoXxbcIph8j5lNdGxH5R8yzhPnvXi2wE1BpvbW8t+L7ZxidbTx73eW9T9xpAaxQ1mtgA1GLwTAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\MemberPortal\\MemberPortal.csproj",
+  "projectFilePath": "C:\\Users\\sud44\\OneDrive\\Desktop\\UI\\MemberPortal\\MemberPortal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sud44\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",
     "C:\\Users\\sud44\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.9\\microsoft.aspnetcore.authentication.jwtbearer.3.1.9.nupkg.sha512",
