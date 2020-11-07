@@ -5615,11 +5615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MFPE\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
+      "projectUniqueName": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
       "projectName": "MemberServiceTesting",
-      "projectPath": "E:\\MFPE\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
+      "projectPath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "E:\\MFPE\\ClaimManagementSystem\\MemberServiceTesting\\obj\\",
+      "outputPath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberServiceTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5635,8 +5635,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj": {
-              "projectPath": "E:\\MFPE\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj"
+            "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj": {
+              "projectPath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberMicroservice\\MemberMicroservice.csproj"
             }
           }
         }

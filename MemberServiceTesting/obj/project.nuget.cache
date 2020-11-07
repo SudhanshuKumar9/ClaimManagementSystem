@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E3gDCgEogjaRPf2/bsteU3q733hDbFWOOJzDSqR3aHd/g8ZkGBqwmhKn+kRJz0SDOlxx1ZM0mzIov78rGn7rlQ==",
+  "dgSpecHash": "RrB9rW2BJ+PYNjsm6Fi9ROI2NEdl1hvK/QdBbZ0PncepI0Dz7S0WNUxbjek7BPFVOaPSBr/nw/gJysoyhrJPeg==",
   "success": true,
-  "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
+  "projectFilePath": "E:\\MFPE\\ClaimManagementSystem\\ClaimManagementSystem\\MemberServiceTesting\\MemberServiceTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",
