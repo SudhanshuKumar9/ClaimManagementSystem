@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\Authorization\\Authorization.csproj": {}
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\Final\\Authorization\\Authorization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\Authorization\\Authorization.csproj": {
+    "C:\\Users\\sud44\\OneDrive\\Desktop\\Final\\Authorization\\Authorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\Authorization\\Authorization.csproj",
+        "projectUniqueName": "C:\\Users\\sud44\\OneDrive\\Desktop\\Final\\Authorization\\Authorization.csproj",
         "projectName": "Authorization",
-        "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\Authorization\\Authorization.csproj",
+        "projectPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\Final\\Authorization\\Authorization.csproj",
         "packagesPath": "C:\\Users\\sud44\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\new pull\\Authorization\\obj\\",
+        "outputPath": "C:\\Users\\sud44\\OneDrive\\Desktop\\Final\\Authorization\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sud44\\AppData\\Roaming\\NuGet\\NuGet.Config",

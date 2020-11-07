@@ -38,13 +38,14 @@ namespace Authorization.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         //https://localhost:44392/api/Auth/Login
-        [HttpPost("Login")]
+        [HttpPost]
+        [Route("Login")]
         public IActionResult Login([FromBody]LoginModel model)
         {
 
             try
             {
-                _log4net.Info(nameof(Login) + " method invoked");
+                _log4net.Info(nameof(Login) + " method invoked, Username : "+model.Username);
                 Member memberDetail=CheckCredential(model);
                 if (memberDetail != null)
                 {
@@ -64,19 +65,36 @@ namespace Authorization.Controllers
 
         }
 
+
+        /// <summary>
+        /// method will fetch credential from member service
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns>Member</returns>
         private Member CheckCredential(LoginModel model)
         {
-            Member memberDetail;
-            var jsonData = JsonConvert.SerializeObject(model);
-            var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            using (var client = new HttpClient())
+            try
             {
-                var response = client.PostAsync("https://localhost:44355/api/Members/", encodedData);
-                var responseData = response.Result.Content.ReadAsStringAsync();
-                memberDetail = JsonConvert.DeserializeObject<Member>(responseData.Result);
-            }
+                _log4net.Info(nameof(CheckCredential) + " method invoked.");
+                Member memberDetail;
+                var jsonData = JsonConvert.SerializeObject(model);
+                var encodedData = new StringContent(jsonData, Encoding.UTF8, "application/json");
+                using (var client = new HttpClient())
+                {
+                    var response = client.PostAsync("https://localhost:44355/api/Members/", encodedData);
+                    var responseData = response.Result.Content.ReadAsStringAsync();
+                    memberDetail = JsonConvert.DeserializeObject<Member>(responseData.Result);
+                }
 
-            return memberDetail;
+                return memberDetail;
+            }
+            catch(Exception e)
+            {
+                _log4net.Error("Error Occured from " + nameof(CheckCredential) + "Error Message : " + e.Message);
+                
+                throw e;
+            }
+           
 
         }
 

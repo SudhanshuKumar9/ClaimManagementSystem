@@ -32,6 +32,7 @@ namespace AuthorizationTest
         }
 
 
+        #region Repository testing
         [Test]
         public void GenerateJSONWebToken_ValidMember_ReturnsToken()
         {
@@ -62,5 +63,41 @@ namespace AuthorizationTest
             
             
         }
+
+        #endregion
+
+
+        #region Controller testing
+
+        [Test]
+        public void Controller_Login_ValidCredential_ReturnsOk()
+        {
+            config.Setup(p => p["Jwt:Key"]).Returns("ThisIsMySecretKey");
+            config.Setup(p => p["Jwr:Issuer"]).Returns("https://localhost:44392");
+            mockSet.Setup(m => m.GenerateJSONWebToken(config.Object, loginDetails[0]));
+
+            AuthController auth = new AuthController(config.Object,mockSet.Object);
+            var data = auth.Login(new LoginModel { Username = "john@123", Password = "Training@123" });
+            var dataStatusCode = data as OkObjectResult;
+            Assert.IsNotNull(data);
+            Assert.AreEqual(200, dataStatusCode.StatusCode);
+        }
+
+        [Test]
+        public void Controller_Login_InvalidCredential_ReturnsUnauthorized()
+        {
+            config.Setup(p => p["Jwt:Key"]).Returns("ThisIsMySecretKey");
+            config.Setup(p => p["Jwr:Issuer"]).Returns("https://localhost:44392");
+            mockSet.Setup(m => m.GenerateJSONWebToken(config.Object, loginDetails[0]));
+
+            AuthController auth = new AuthController(config.Object, mockSet.Object);
+            var data = auth.Login(new LoginModel { Username = "abcdef", Password = "defgh" });
+            var dataStatusCode = data as UnauthorizedObjectResult;
+            Assert.AreEqual("Invalid Credentials", dataStatusCode.Value);
+            Assert.AreEqual(401,dataStatusCode.StatusCode);
+            
+        }
+
+        #endregion
     }
 }
