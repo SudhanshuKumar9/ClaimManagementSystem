@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7+iKdL06OQINNlBzHM7gpxulF7iPJHdpr6f3hgklXQCEyRdOQAz1nnw3O3S+73vU0p1+airCLSr/qN8mqSiFw==",
+  "dgSpecHash": "r6BIE0CH9oob5vR5dTKijhfGY2DEqsIHIhTdWyoPxQCuKx7jbYjJhx6830bV1QyCPZUtSWmy3hwNzXLyw1cxpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

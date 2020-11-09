@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
         "projectName": "PolicyMicroserviceTest",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj"
+              "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj",
         "projectName": "PolicyMicroservice",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\PolicyMicroservice.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\PolicyMicroservice.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroservice\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

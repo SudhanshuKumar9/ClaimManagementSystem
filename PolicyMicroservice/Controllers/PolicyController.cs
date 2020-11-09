@@ -30,7 +30,7 @@ namespace PolicyMicroservice.Controllers
         /// <returns></returns>
 
 
-        //https://localhost:44373/api/Policy/GetChainOfProviders/1
+        //http://52.224.146.148/api/Policy/GetChainOfProviders/1
         [HttpGet]
         [Route("GetChainOfProviders/{PolicyID}")]
         public IActionResult GetChainOfProviders(int policyId)
@@ -64,8 +64,8 @@ namespace PolicyMicroservice.Controllers
         /// <param name="MemberID"></param>
         /// <returns></returns>
 
-      // https://localhost:44373/api/Policy/GetEligibleBenefits?PolicyId=1&MemberID=1 
-      [HttpGet]
+        // http://52.224.146.148/api/Policy/GetEligibleBenefits?PolicyId=1&MemberID=1
+        [HttpGet]
       [Route("GetEligibleBenefits")]
     
         public IActionResult GetEligibleBenefit([FromQuery]int policyId,[FromQuery] int memberId)
@@ -100,7 +100,7 @@ namespace PolicyMicroservice.Controllers
         /// <param name="BenefitId"></param>
         /// <returns></returns>
         /// 
-        //https://localhost:44373/api/Policy/GetEligibleClaimAmount?PolicyId=1&MemberID=1&BenefitId=1
+        //http://52.224.146.148/api/Policy/GetEligibleClaimAmount?PolicyId=1&MemberID=1&BenefitId=1
         [HttpGet]
         [Route("GetEligibleClaimAmount")]
         public IActionResult GetEligibleClaimAmount([FromQuery]int policyId,[FromQuery] int memberId,[FromQuery] int benefitId)

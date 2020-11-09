@@ -51,7 +51,7 @@ namespace PolicyMicroserviceTest
         /// <param name="benefitId"></param>
 
         [TestCase(1,1,1)]
-        public void RepoTestPass(int policyId,int memberId,int benefitId)
+        public void GetEligbleClaimAmount_Repo_ValidInput_ReturnsRightValue(int policyId,int memberId,int benefitId)
         {
             double d = 0.0;
             Mock<IPolicyRepo> policyContextMock = new Mock<IPolicyRepo>();
@@ -70,7 +70,7 @@ namespace PolicyMicroserviceTest
         /// <param name="benefitId"></param>
         [TestCase(11, 12, 11)]
         [TestCase(1, 12, 71)]
-        public void RepoTestFail(int policyId, int memberId, int benefitId)
+        public void GetEligbleClaimAmount_Repo_InvalidInput_ReturnsWrongValue(int policyId, int memberId, int benefitId)
         {
             //double d = 0.0;
             Mock<IPolicyRepo> policyContextMock = new Mock<IPolicyRepo>();
@@ -89,7 +89,7 @@ namespace PolicyMicroserviceTest
         /// <param name="benefitId"></param>
         [TestCase(1, 1,1)]
         [TestCase(1, 2, 1)]
-        public void ControllerTestPass(int policyId, int memberId,int benefitId)
+        public void GetEligbleClaimAmount_Controller_ValidInput_ReturnsOkResponseStatus(int policyId, int memberId,int benefitId)
         {
            // double d=0.0;
            // IActionResult i;
@@ -108,7 +108,7 @@ namespace PolicyMicroserviceTest
         /// <param name="benefitId"></param>
         [TestCase(-11, -1, 1)]
         [TestCase(-1, -1, 1)]
-        public void ControllerTestFail(int policyId, int memberId, int benefitId)
+        public void GetEligbleClaimAmount_Controller_InvalidInput_ReturnsBadRequestStatus(int policyId, int memberId, int benefitId)
         {
             
             

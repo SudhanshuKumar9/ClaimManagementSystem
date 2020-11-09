@@ -51,7 +51,7 @@ namespace PolicyMicroserviceTest
         [TestCase(1,1)]
         [TestCase(1, 2)]
 
-        public void RepoTestPass(int policyId,int memberId)
+        public void EligibleBenefitTest_Repo_ValidInput_ReturnsRightValue(int policyId,int memberId)
         {
             string p = "";
             Mock<IPolicyRepo> policyContextMock = new Mock<IPolicyRepo>();
@@ -69,7 +69,7 @@ namespace PolicyMicroserviceTest
         /// <param name="memberId"></param>
         [TestCase(9,1)]
         [TestCase(9, 12)]
-        public void RepoTestFail(int policyId, int memberId)
+        public void EligibleBenefitTest_Repo_InvalidInput_ReturnsWrongValue(int policyId, int memberId)
         {
             string p = "";
             Mock<IPolicyRepo> policyContextMock = new Mock<IPolicyRepo>();
@@ -88,7 +88,7 @@ namespace PolicyMicroserviceTest
         /// <param name="memberId"></param>
         [TestCase(1,1)]
         [TestCase(1, 2)]
-        public void ControllerTestPass(int policyId,int memberId)
+        public void EligibleBenefitTest_Controller_ValidInput_ReturnsOkResultStatus(int policyId,int memberId)
         {
             
 
@@ -106,7 +106,7 @@ namespace PolicyMicroserviceTest
         /// <param name="memberId"></param>
         [TestCase(-1, -1)]
         [TestCase(-14, 1)]
-        public void ControllerTestFail(int policyId, int memberId)
+        public void EligibleBenefitTest_Controller_InvalidInput_ReturnsBadRequestStatus(int policyId, int memberId)
         {
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Li4OSq7N15k5HDp6a7IXH0MCE8wPYMPynGStj3P/Dyuk4sx6logG5Mn5HMEeTK6eb0sWBWwAvfsy7CRREC/IA==",
+  "dgSpecHash": "D5JIe6j9I55EX9xDmtl6KcZ56j/mszCM42mr3nPYW+0BW5p3JOtzt1CEn4VxZb3e7Yrr5s5RZDKtDvqSiYSH2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\ClaimManagementSyatem\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\PolicyMicroService\\PolicyMicroserviceTest\\PolicyMicroserviceTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",

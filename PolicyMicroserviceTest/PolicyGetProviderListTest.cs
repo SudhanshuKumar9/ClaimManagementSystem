@@ -41,7 +41,7 @@ namespace PolicyMicroserviceTest
         /// <param name="policyId"></param>
 
         [TestCase(1)]
-        public void RepoPassTest(int policyId)
+        public void PolicyGetProviderList_Repo_ValidInput_ReturnsRightValue(int policyId)
         {
             Mock<IPolicyRepo> mock = new Mock<IPolicyRepo>();
             mock.Setup(p => p.GetChainOfProviders(policyId)).Returns(providerPolicies);
@@ -56,7 +56,7 @@ namespace PolicyMicroserviceTest
         /// <param name="policyId"></param>
         [TestCase(9)]
         [TestCase(14)]
-        public void RepoFailTest(int policyId)
+        public void PolicyGetProviderList_Repo_InvalidInput_ReturnsWrongValue(int policyId)
         {
             Mock<IPolicyRepo> mock = new Mock<IPolicyRepo>();
             mock.Setup(p => p.GetChainOfProviders(policyId)).Returns(providerPolicies);
@@ -74,7 +74,7 @@ namespace PolicyMicroserviceTest
         /// <param name="policyId"></param>
         [TestCase(1)]
         [TestCase(2)]
-        public void ControllerPassTest(int policyId)
+        public void PolicyGetProviderList_Controller_ValidInput_ReturnsOkResponseStatus(int policyId)
         {
             Mock<IPolicyRepo> mock = new Mock<IPolicyRepo>();
             mock.Setup(p => p.GetChainOfProviders(policyId)).Returns(providerPolicies);
@@ -89,7 +89,7 @@ namespace PolicyMicroserviceTest
         /// <param name="policyId"></param>
         [TestCase(-1)]
         [TestCase(-14)]
-        public void ControllerFailTest(int policyId)
+        public void PolicyGetProviderList_Controller_InvalidInput_ReturnsBadRequestStatus(int policyId)
         {
             Mock<IPolicyRepo> mock = new Mock<IPolicyRepo>();
             mock.Setup(p => p.GetChainOfProviders(policyId)).Returns(providerPolicies);
